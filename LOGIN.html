@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <!-- LOGO + 選單列 -->
+        <nav class="logo-nav">
+            <a href="HOME.html"><img src="./img/LOGO.png" alt=""></a>
+            <ul>
+                <li><a href="HOME.html">HOME</a></li>
+                <li><a href="FOTO.html">FOTO</a>
+                    <ol class="sub-nav">
+                        <!-- 子選單 -->
+                        <li><a href="BW1.html">B&W</a></li>
+                        <li><a href="COLOR.html">COLOR</a></li>
+                        <li><a href="FILM.html">FILM</a></li>
+                    </ol>
+                </li>
+                <li><a href="VIDEO.html">VIDEO</a></li>
+                <li><a href="SHOP.html">SHOP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btbtn"></div>
+                <button type="button" class="toggle-btn" onclick="LOGIN()">LOGIN</button>
+                <button type="button" class="toggle-btn" onclick="REGISTER()">REGISTER</button>
+            </div>
+            <div class="social-icons">
+                <img src="./img/facebook.png">
+                <img src="./img/google.png">
+                <img src="./img/twitter.png">
+            </div>
+            <form id="login1" class="input-group">
+                <input type="text" class="input-filed" placeholder="USER ID" required>
+                <input type="text" class="input-filed" placeholder="ENTER PASSWORD" required>
+                <input type="checkbox" class="chech-box"><span>REMEMBER PASSSWORD</span>
+                <button type="submit" class="submit-btn">LOG IN</button>
+            </form>
+            <form id="REGISTER" class="input-group">
+                <input type="text" class="input-filed" placeholder="USER ID" required>
+                <input type="EMAIL" class="input-filed" placeholder="EMAIL ID" required>
+                <input type="checkbox" class="chech-box"><span>I AGREE TO THE TERMS</span>
+                <button type="submit" class="submit-btn">REGISTER</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="logo-gif2">
+        <img src="./img/logo.gif" alt="">
+    </div>
+  
+    <!-- FOOTER -->
+    <!-- <footer>
+        <div class="footer_type">
+            <ul>
+                <li>
+                    <a href=""><img src="./img/fb-icon.png" alt=""></a>
+                    <a href=""><img src="./img/instagram.png" alt=""></a>
+                    <a href=""><img src="./img/youtube.png" alt=""></a>
+                </li>
+                <a href="INDEX.html"><img src="./img/LOGO-2.png" alt=""></a>
+                <p>Copyright © 2022 CIAO-LI.<br>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
+            </ul>
+        </div>
+    </footer> -->
+
+    <script>
+        var x = document.getElementById("login1");
+        var y = document.getElementById("REGISTER");
+        var z = document.getElementById("btbtn");
+        
+        function REGISTER(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function LOGIN(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+        
+
+
+    </script>
+</body>
+
+</html>
