@@ -496,7 +496,7 @@ section p{
 @keyframes c1{
     0%{
         opacity: 0;
-        transform: translateY(-100px);
+        transform: translateY(-30px);
     }
     100%{
         opacity: 1;
@@ -510,7 +510,7 @@ section p{
 @keyframes c2{
     0%{
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(30px);
     }
     100%{
         opacity: 1;
@@ -526,7 +526,7 @@ section p{
 @keyframes c3{
     0%{
         opacity: 0;
-        transform: translateY(-100px);
+        transform: translateY(-30px);
     }
     100%{
         opacity: 1;
@@ -540,7 +540,7 @@ section p{
 @keyframes c4{
     0%{
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(30px);
     }
     100%{
         opacity: 1;
@@ -555,7 +555,7 @@ section p{
 @keyframes c5{
     0%{
         opacity: 0;
-        transform: translateY(-100px);
+        transform: translateY(-30px);
     }
     100%{
         opacity: 1;
@@ -569,7 +569,7 @@ section p{
 @keyframes c6{
     0%{
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(30px);
     }
     100%{
         opacity: 1;
@@ -584,7 +584,7 @@ section p{
 @keyframes filmimg{
     0%{
         opacity: .5;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     100%{
         opacity: 1;
