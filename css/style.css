@@ -869,6 +869,94 @@ section p{
     margin: 50px 10px;
 }
 
+.price{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.price h3{
+    color: white;
+    background-color: black;
+    border:0;
+    width: 100px;
+    height: 15px;
+    padding: 5px 0;
+    margin: 0 auto;
+    border-radius: 20px;
+    animation: price 1.5s linear;
+}
+
+@keyframes price{
+    0%{
+        color: white;
+        transform: translateY(5px);
+    }
+    100%{
+        color: #E1C564;
+    }
+}
+
+.counter {
+    width: 150px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter span {
+    display: block;
+    font-size: 14px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: black;
+    user-select: none;
+}
+
+.counter input {
+    width: 50px;
+    border: 0;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    background: black;
+    color: #E1C564;
+}
+
+.addtocart{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.addtocart a {
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.addtocart a:hover{
+    color: black;
+}
+
+.addtocart a > h2{
+    font-size: 14px;
+    text-align: center;
+    background-color: #E1C564;
+    box-shadow: 1px 1px 1px #caa728;
+    width: 120px;
+    line-height: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: .3s ease;
+}
+
 /* LOGIN PAGE */
 .login{
     height: 100%;

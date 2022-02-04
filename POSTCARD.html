@@ -30,7 +30,9 @@
     <!-- SHOP BANNER -->
     <div class="shopban">
         <div class="bigtitle">
-            <a href="POSTCARD.html"><h1>POSTCARD</h1></a>
+            <a href="POSTCARD.html">
+                <h1>POSTCARD</h1>
+            </a>
         </div>
         <div class="itempic">
             <a href="POSTCARD.html"><img src="./img/shop/POSTCARD1.png" alt=""></a>
@@ -40,7 +42,9 @@
     <div class="nav-icon">
         <ul>
             <li><a href="LOGIN.html"><img src="./img/AICON.png" alt=""></a></li>
-            <li><a href="LOGIN.html"><p>LOG IN</p></a></li>
+            <li><a href="LOGIN.html">
+                    <p>LOG IN</p>
+                </a></li>
             <li><a href=""><img src="./img/SICON.png" alt=""></a></li>
         </ul>
     </div>
@@ -55,17 +59,39 @@
             <li><a href="BOOKMARK.html">BOOKMARK</a></li>
         </ul>
     </div>
+
+    <!-- PRICE -->
+    <div class="price">
+        <h3>NT.18</h3>
+    </div>
+
+    <!-- item -->
     <div class="item">
         <div>
             <img src="./img/shop/item2.png" alt="">
+            <div class="counter">
+                <span class="down" onclick="decreaseCount(event, this)">-</span>
+                <input type="text" value="1">
+                <span class="up" onclick="increaseCount(event, this)">+</span>
+            </div>
+            <!-- ADD -->
+            <div class="addtocart">
+                <a href="">
+                    <h2>ADD TO CART</h2>
+                </a>
+                <a href="">
+                    <h2>BUY NOW</h2>
+                </a>
+            </div>
         </div>
-        <div>
-            <ul class="filmbtn">
-                <li><a href="SHOP.html"></a></li>
-                <li><a href="POSTCARD.html"></a></li>
-                <li><a href="BOOKMARK.html"></a></li>
-            </ul>
-        </div>
+    </div>
+    <div>
+        <ul class="filmbtn">
+            <li><a href="SHOP.html"></a></li>
+            <li><a href="POSTCARD.html"></a></li>
+            <li><a href="BOOKMARK.html"></a></li>
+        </ul>
+    </div>
     </div>
 
     <!-- CONTACT -->
@@ -74,7 +100,7 @@
                 <h2>CONTACT</h2>
             </a></li>
     </ul>
-    
+
     <!-- FOOTER -->
     <footer>
         <div class="footer_type">
