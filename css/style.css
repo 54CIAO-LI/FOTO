@@ -832,7 +832,7 @@ section p{
 }
 
 .nav-item li a{
-    font-size: 10%;
+    font-size: 16px;
     text-decoration: none;
     color: black;   
 }
