@@ -211,25 +211,15 @@ ul > li:hover ol {
 .foto-sub img{
     width: 80%;
     margin-bottom: 30px;
-    opacity: .8;
+    filter: grayscale(100) sepia(.5);
 }
 
 .foto-sub img:hover{
-    animation: hfimg 2s linear;
     opacity: 1;
     box-shadow: 2px 2px 2px #caa728;
+    filter: grayscale(0);
     transition: 1s;
-}
-
-@keyframes hfimg{
-    0%{
-        transform: translateY(-5px);
-    }
-
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
+    box-shadow: 3px 3px 3px #caa728;
 }
 
 /* 首頁第三欄 */
@@ -272,7 +262,8 @@ ul > li:hover ol {
 }
 
 .bac-3 li video:hover{
-    animation: hfimg 2s linear;
+    transition: 1s;
+    box-shadow: 4px 4px 4px #caa728;
 }
 
 .bac-3 li img{
@@ -281,8 +272,10 @@ ul > li:hover ol {
 }
 
 .bac-3 li img:hover{
-    animation: hfimg 2s linear;
+    transition: 1s;
+    box-shadow: 4px 4px 4px #caa728;
 }
+
 
 .contactbtn{
     text-align: center;
@@ -432,7 +425,6 @@ section p{
     margin: 0 auto;
     text-align: center;
     margin: 0 auto;
-    text-align: center;
     background:#E1C564;
     height: 500px;
 }
