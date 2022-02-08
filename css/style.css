@@ -131,7 +131,6 @@ ul > li:hover ol {
     text-align: center;
     margin: 50px auto;
     color: #E1C564;
-
 }
 
 .section a{
@@ -139,7 +138,8 @@ ul > li:hover ol {
 }
 
 .section a > h1:hover{
-    animation: hfimg 2s linear;
+    transition: 2s;
+    text-shadow: 2px 2px 2px #caa728;
 }
 
 .foto-sub{
