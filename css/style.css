@@ -107,6 +107,22 @@ body {
     color: #E1C564;
 }
 
+#nav1{
+    color:#E1C564;
+}
+
+#navf{
+    color:#E1C564;
+}
+
+#navv{
+    color: #E1C564;
+}
+
+#navs{
+    color: #E1C564;
+}
+
 /* 子選單 */
 ol{
     display: none;
@@ -126,6 +142,20 @@ ol{
 ul > li:hover ol {
     display: block;
 }
+
+/* 首頁主影片 */
+.homevideobac{
+    margin: 0 auto;
+    text-align: center;
+    background:#E1C564;
+    filter: sepia(.3);
+    height: 500px;
+}
+
+.homevideobac video{
+    height: 500px;
+}
+
 
 /*  首頁第二欄 */
 .section h1{
@@ -398,6 +428,19 @@ section p{
     padding-bottom: 100px;
 }
 
+.bwfoto{
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    background:#E1C564;
+    height: 500px;
+}
+
+.bwfoto video{
+    height: 500px;
+}
+
 .bwlist1{
     display: inline;
     text-align: center;
@@ -409,12 +452,16 @@ section p{
 
 .bwlist1 img{
     max-width: 250px;
-    margin: 10px 10px;
-    animation: bwimg 2s linear;
+    margin: 20px 20px;
+    /* animation: bwimg 2s linear; */
 }
 
-.bwlist1 img:hover{
-    opacity: .8;
+.bwlist1 img:hover{   
+    width: 100%;
+    text-align: center;
+    background-color:#E1C564;
+    transition: 1s;
+    transform: scale(1.1);
 }
 
 @keyframes bwimg{
@@ -803,7 +850,7 @@ section p{
     text-decoration: none;
     text-align: center;
     padding-right: 5px;
-    padding-left: 10px;   
+    padding-left: 8px;   
     color: black;
 }
 
@@ -831,7 +878,7 @@ section p{
 .nav-icon i{
     color: black;
     font-weight: 900;  
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .nav-icon i:hover{
