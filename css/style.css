@@ -734,7 +734,16 @@ section p{
 
 /* VIDEO PAGE */
 .vv{
+    height: 500px;
+    /* margin-bottom: 120px; */
+    text-align: center;
+    margin: 0 auto;
+    background-color: #E1C564;
     margin-bottom: 120px;
+}
+
+.vv video{
+    height: 500px;
 }
 .vbac{
     margin:0 auto;
@@ -753,11 +762,13 @@ section p{
 }
 
 .vbac video{
-    transition: 2s;
+   height: 300px;
+   filter: grayscale(100);
 }
 
 .vbac a video:hover{
-    box-shadow: 3px 3px 2px #E1C564;
+    transition: 3s;
+    filter: drop-shadow(2px 2px 2px #e1c564) grayscale(0);
 }
 
 /* SHOP page */
