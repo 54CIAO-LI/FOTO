@@ -407,7 +407,7 @@ section p{
 }
 
 .bwlist1 img{
-    max-width: 300px;
+    max-width: 250px;
     margin: 10px 10px;
 
     animation: bwimg 2s linear;
