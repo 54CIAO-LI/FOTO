@@ -489,10 +489,26 @@ section p{
 
 
 /* COLOR PAGE*/
+.color-foto{
+    background-color: #E1C564;
+    margin: 0 auto;
+    text-align: center;
+    height: 500px;
+}
+
 .color-foto img{
-    width: 100%;
+    height: 500px;
     animation: colorimg 2s ease-in;
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
+}
+
+.color-foto video{
+    height: 500px;
+}
+
+.color-foto video:hover{
+    transition: 1s;
+    filter: brightness(1.1);
 }
 
 @keyframes colorimg{
@@ -528,6 +544,10 @@ section p{
     display: inline;
     margin: 0 auto;
     text-align: center;
+}
+
+.colorlist img{
+    height: 250px;
 }
 
 .colorlist img:hover{
@@ -745,6 +765,7 @@ section p{
 .vv video{
     height: 500px;
 }
+
 .vbac{
     margin:0 auto;
     text-align: center;
