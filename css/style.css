@@ -170,23 +170,28 @@ ul > li:hover ol {
 
 .foto-sub li a > h2:hover{
     color: #E1C564;
-    animation: hfimg 2s linear ;
+    transition: 2s;
+    text-shadow: 1px 1px 1px #caa728;
 }
 
 .foto-sub img{
     width: 80%;
     margin-bottom: 30px;
+    opacity: .8;
 }
 
 .foto-sub img:hover{
-    opacity: 0.5;
     animation: hfimg 2s linear;
+    opacity: 1;
+    box-shadow: 2px 2px 2px #caa728;
+    transition: 1s;
 }
 
 @keyframes hfimg{
     0%{
         transform: translateY(-5px);
     }
+
     100%{
         transform: translateX(0);
         opacity: 1;
@@ -224,7 +229,7 @@ ul > li:hover ol {
 
 .bac-3 li a h2:hover{
     color: white;
-    animation: hfimg 2s linear;
+    transition: 1s;
 }
 
 .bac-3 li video{
@@ -349,6 +354,7 @@ ul > li:hover ol {
     text-align: center;
     margin-bottom: 20px;
     padding-top: 20px;
+    
 }
 
 .foto-sub1 li a{
@@ -357,7 +363,8 @@ ul > li:hover ol {
 
 .foto-sub1 li a > h2:hover{
     color: #E1C564;
-    animation: hfimg 2s linear;
+    transition: 2s;
+    text-shadow: 1px 1px 1px #caa728;
 }
 
 .foto-sub1 img{
@@ -406,7 +413,6 @@ section p{
 .bwlist1 img{
     max-width: 250px;
     margin: 10px 10px;
-
     animation: bwimg 2s linear;
 }
 
