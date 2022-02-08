@@ -710,6 +710,14 @@ section p{
     color: #E1C564;
 }
 
+.vbac video{
+    transition: 2s;
+}
+
+.vbac a video:hover{
+    box-shadow: 3px 3px 2px #E1C564;
+}
+
 /* SHOP page */
 /* SHOP BANNER */
 .shopban{
