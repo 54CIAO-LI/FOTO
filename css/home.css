@@ -34,7 +34,8 @@ body{
     margin: 0 auto;
     padding: 0;
     position: relative;
-    background: #fbf8ed;
+    /* background: #fbf8ed; */
+    position: fixed;
 }
 
 .logo-nav ul{
@@ -52,9 +53,9 @@ body{
 .logo-nav li a{
     flex-grow: 1;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 0 10px;
     /* border:  2px solid goldenrod; */
 }
@@ -223,8 +224,8 @@ h1, h2, h3{
     .foto-grid{
         grid-template-columns: repeat(2, 1fr);
     }
-    .foto-grid > ul{
-        height: 500px;
+    .foto-grid > div{
+        height: 480px;
         overflow: hidden;
     }
     .foto-grid > div img{
