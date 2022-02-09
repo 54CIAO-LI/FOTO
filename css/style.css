@@ -10,16 +10,16 @@ body {
     background-color: #fbf8ee;
 }
 
-
 /* -- HOME PAGE -- */
 
 .index {
     margin: 0 auto;
     position: relative;
+    width: 100vh;
 }
 
 .index-Logo {
-    max-width: 100%;
+    max-width: 20vh;
     position: absolute;
     left: 0;
     right: 0;
@@ -53,13 +53,13 @@ body {
         transform: scale(1) rotate(0);
     }
 }
-/* .bac {
-    width: 100vh;
+.bac {
     margin: 0 auto;
-} */
+}
 
-.index .bac img {
-    width: 100%;
+.bac img {
+    width: 100vh;
+    
     animation: bac 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
