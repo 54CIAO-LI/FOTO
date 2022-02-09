@@ -10,6 +10,11 @@ body {
     background-color: #fbf8ee;
 }
 
+*{
+    box-sizing: border-box;
+}
+
+
 /* -- HOME PAGE -- */
 
 .index {
@@ -149,19 +154,24 @@ ul > li:hover ol {
 .homevideobac{
     margin: 0 auto;
     text-align: center;
-    background:#E1C564;
-    filter: sepia(.3);
+    background-color: black;
     height: 500px;
 }
 
-.homevideobac video{
-    height: 500px;
+#homevid video{
+    margin: 25px auto;
+    height: 450px;
+}
+
+#homevid video:hover{
+    transition: 2s;
+    filter: sepia(.5) drop-shadow(2px 2px 2px #caa728);
 }
 
 
 /*  首頁第二欄 */
 .section h1{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 900;
     letter-spacing: 2px;
     text-align: center;
@@ -181,7 +191,7 @@ ul > li:hover ol {
 .foto-sub{
     margin: 0  auto;
     text-align: center;
-    background: #f1e6be;
+    /* background: #f1e6be; */
 }
  
 .foto-sub ul{
@@ -189,7 +199,8 @@ ul > li:hover ol {
 }
 
 .foto-sub li{
-    flex-basis: 80%;
+    flex-basis: 90%;
+
 }
 
 .foto-sub li h2{
@@ -211,7 +222,7 @@ ul > li:hover ol {
 }
 
 .foto-sub img{
-    width: 80%;
+    width: 60%;
     margin-bottom: 30px;
     filter: grayscale(100) sepia(.5);
 }
@@ -222,6 +233,19 @@ ul > li:hover ol {
     filter: grayscale(0);
     transition: 1s;
     box-shadow: 3px 3px 3px #caa728;
+    animation: hfimg 2s linear;
+}
+
+@keyframes hfimg{
+    0%{
+        transform: scale(1) translate(0);
+    }
+    50%{
+        transform: scale(1.1) translateY(5px);
+    }
+    100%{
+        transform: scale(1) translate(0);
+    }
 }
 
 /* 首頁第三欄 */
@@ -396,6 +420,7 @@ ul > li:hover ol {
 .FOTO-item li a > h2:hover{
     transition: 2s;
     color: #caa728;
+    letter-spacing: 5px;
 }
 
 .FOTO-item img{
@@ -714,6 +739,7 @@ section p{
 
 .filmlist img:hover{
     opacity: .8;
+    transition: 2s;
 }
 
 #fimg2{
@@ -757,7 +783,6 @@ section p{
 /* VIDEO PAGE */
 .vv{
     height: 500px;
-    /* margin-bottom: 120px; */
     text-align: center;
     margin: 0 auto;
     background-color: #E1C564;
@@ -765,7 +790,8 @@ section p{
 }
 
 .vv video{
-    height: 500px;
+    margin-top: 25px;
+    height: 450px;
 }
 
 .vbac{
@@ -973,21 +999,16 @@ section p{
     background-color: black;
     border:0;
     width: 100px;
-    height: 15px;
+    height: 25px;
     padding: 5px 0;
     margin: 0 auto;
     border-radius: 20px;
-    animation: price 1.5s linear;
 }
 
-@keyframes price{
-    0%{
-        color: white;
-        transform: translateY(5px);
-    }
-    100%{
-        color: #E1C564;
-    }
+.price h3:hover{
+    transition: 1s;
+    color:#E1C564;
+    
 }
 
 .counter {
