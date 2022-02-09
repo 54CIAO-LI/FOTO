@@ -868,7 +868,6 @@ section p{
 
 .nav-icon ul{
     display: flex;
-
 }
 
 .nav-icon li a{
@@ -876,7 +875,8 @@ section p{
     text-decoration: none;
     text-align: center;
     padding-right: 5px;
-    padding-left: 8px;   
+    padding-left: 5px;
+    letter-spacing: 1px;   
     color: black;
 }
 
@@ -890,10 +890,6 @@ section p{
 
 .nav-item #i3 a{
     color:#E1C564;
-}
-
-.nav-icon li a p{
-    padding-left: 10px;
 }
 
 .nav-icon li a:hover{
