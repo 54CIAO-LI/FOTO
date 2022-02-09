@@ -1051,6 +1051,10 @@ section p{
     transition: .3s ease;
 }
 
+#s1{
+    background-color: #E1C564;
+}
+
 /* LOGIN PAGE */
 .login{
     height: 100%;
