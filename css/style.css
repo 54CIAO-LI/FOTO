@@ -932,6 +932,7 @@ section p{
 
 .nav-item li a:hover{
     color: #E1C564;
+    transition: 1s;
 }
 
 .item{
