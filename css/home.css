@@ -1,0 +1,259 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --transition: all 300ms ease-in-out;
+    --dark-color: #000000;
+    --light-color: #fbf8ed;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6em;
+    font-family:  'Open Sans', sans-serif, 'Roboto', '思源黑體', '微軟正黑體';
+    line-height: 1.6;
+    background: #fbf8ed;
+}
+
+
+/*  主選單 */
+.logo-nav{
+    width: 100%;
+    display: inline-flex; 
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    background: #fbf8ed;
+}
+
+.logo-nav ul{
+    display: inline-flex;
+    text-align: center;
+    float: right;
+    position: absolute;
+    clear: both;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding-top: 65px;
+}
+
+.logo-nav li a{
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 10px;
+    /* border:  2px solid goldenrod; */
+}
+
+.logo-nav li a:hover{
+    color: #E1C564;
+}
+
+#nav1{
+    color:#E1C564;
+}
+
+#navf{
+    color:#E1C564;
+}
+
+#navv{
+    color: #E1C564;
+}
+
+#navs{
+    color: #E1C564;
+}
+
+/* 子選單 */
+ol{
+    display: none;
+    position: absolute;
+}
+
+.sub-nav li{
+    display: flex;
+}
+
+
+.sub-nav li a {
+    text-align: left;
+    line-height: 1.3;
+} 
+
+ul > li:hover ol {
+    display: block;
+}
+
+
+button, .btn{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 0 2rem;
+}
+.vh-100{
+    min-height: 100vh;
+}
+
+h1, h2, h3{
+    margin-top: 0;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header */
+#header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)),url(../img/index-background.png) center/cover no-repeat fixed;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#header .container{
+    width: 100%;
+}
+
+.header-content{
+    padding-bottom: 4rem;
+}
+
+.header-content h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: var(--light-color);
+    letter-spacing: 5px;
+}
+
+.header-content h3{
+    color: var(--light-color);
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.social-links{
+    display: flex;
+    margin-top: 3.5rem;
+}
+
+.social-links li a{
+    width: 30px;
+    height: 30px;
+    background-color: var(--light-color);
+    margin-right: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.social-links li a:hover{
+    transition: 1s;
+    background-color: #E1C564;
+    box-shadow: 0 0 1px 1px #fbf8ed;
+}
+
+/* 首頁第二欄 */
+.foto-grid > div{
+    transition: var(--transition);
+    filter: grayscale(1) sepia(.4);
+    cursor: pointer;
+}
+
+.foto-grid > div:hover{
+    transform: scale(.9);
+    filter: grayscale(0);
+}
+
+/* MEDIA */
+@media(min-width: 768px){
+    .header-content h1{
+        font-size: 7rem;
+    }
+}
+
+@media(min-width: 576px){
+    .title h2{
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 5px;
+    }
+    .foto-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .foto-grid > div{
+        height: 500px;
+        overflow: hidden;
+    }
+    .foto-grid > div img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media(min-width: 1200px){
+    .foto-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .foto-grid > :nth-child(2){
+        grid-column: 2 / 4;
+    }
+    .foto-grid > :nth-child(6){
+        grid-column: 1 / 3;
+    }
+}
+
+.title{
+    text-align: center;
+    padding:50px 0;
+}
+
+.title h1{
+    text-align: center;
+    line-height: 50px;
+}
+
+/* 首頁第三欄 */
