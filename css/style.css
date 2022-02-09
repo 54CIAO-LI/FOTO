@@ -32,7 +32,6 @@ body {
     bottom: 0;
     margin: auto;
     animation: tada 5s ease-in-out;
-
 }
 
 @keyframes tada {

@@ -198,14 +198,13 @@ h1, h2, h3{
 
 /* 首頁第二欄 */
 .foto-grid > div{
-    transition: var(--transition);
     filter: grayscale(1) sepia(.4);
     cursor: pointer;
 }
 
 .foto-grid > div:hover{
-    transform: scale(.9);
     filter: grayscale(0);
+    transition: .5s;
 }
 
 /* MEDIA */
@@ -224,7 +223,7 @@ h1, h2, h3{
     .foto-grid{
         grid-template-columns: repeat(2, 1fr);
     }
-    .foto-grid > div{
+    .foto-grid > ul{
         height: 500px;
         overflow: hidden;
     }
@@ -248,12 +247,31 @@ h1, h2, h3{
 
 .title{
     text-align: center;
+}
+
+.title h2{
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-weight: 700;
     padding:50px 0;
+    border-bottom: 5px solid #E1C564;
 }
 
-.title h1{
+.foto-grid{
     text-align: center;
-    line-height: 50px;
 }
 
-/* 首頁第三欄 */
+
+.foto-grid a{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 3;
+    transition: 1s;
+}
+
+.foto-grid a:hover{
+    font-size: 2.6em;
+    letter-spacing: 5px;
+    color: #E1C564;
+}
