@@ -1,0 +1,265 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif, 'Roboto', '思源黑體', '微軟正黑體';
+    background-color: #fbf8ee;
+}
+
+/*  主選單 */
+.logo-nav{
+    width: 100%;
+    display: inline-flex; 
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo-nav ul{
+    display: inline-flex;
+    text-align: center;
+    float: right;
+    position: absolute;
+    clear: both;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding-top: 65px;
+}
+
+.logo-nav li a{
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.logo-nav li a:hover{
+    color: #E1C564;
+}
+
+#nav1{
+    color:#E1C564;
+}
+
+#navf{
+    color:#E1C564;
+}
+
+#navv{
+    color: #E1C564;
+}
+
+#navs{
+    color: #E1C564;
+}
+
+/* 子選單 */
+ol{
+    display: none;
+    position: absolute;
+}
+
+.sub-nav li{
+    display: flex;
+}
+
+
+.sub-nav li a {
+    text-align: left;
+    line-height: 1.5;
+} 
+
+ul > li:hover ol {
+    display: block;
+}
+
+/* 首頁影片 */
+.homevideobac{
+    margin: 0 auto;
+    text-align: center;
+    background: black;
+    height: 400px;
+}
+
+#homevid video{
+    height: 400px;
+}
+
+/* 首頁第二欄 */
+.section h1{
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 50px auto;
+    color: #E1C564;
+}
+
+.section a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.section a > h2:hover{
+    transition: 1s;
+    text-shadow: 2px 2px 2px #caa728;
+    letter-spacing: 6px;
+}
+
+.foto-sub{
+    margin: 0  auto;
+    text-align: center;
+    /* background: #f1e6be; */
+}
+ 
+.foto-sub ul{
+    display: flex;
+    padding: 0 100px;
+}
+
+.foto-sub li{
+    flex-grow: 1;
+}
+
+.foto-sub li h2{
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.foto-sub li a{
+    text-decoration: none;
+}
+
+.foto-sub li a > h2:hover{
+    color: #E1C564;
+    transition: 2s;
+    text-shadow: 1px 1px 1px #caa728;
+}
+
+.foto-sub img{
+    width: 80%;
+    margin-bottom: 30px;
+    filter: grayscale(100) sepia(.5);
+}
+
+.foto-sub img:hover{
+    opacity: 1;
+    box-shadow: 2px 2px 2px #caa728;
+    filter: grayscale(0);
+    transition: 1s;
+    box-shadow: 3px 3px 3px #caa728;
+    animation: hfimg 2s linear;
+}
+
+@keyframes hfimg{
+    0%{
+        transform: scale(1) translate(0);
+    }
+    50%{
+        transform: scale(1.1) translateY(5px);
+    }
+    100%{
+        transform: scale(1) translate(0);
+    }
+}
+
+/* footer */
+.contactbtn{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.contactbtn li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+.contactbtn li a:hover{
+    color: #E1C564;
+}
+
+.contactbtn h2{
+    box-sizing: border-box;
+    text-align: center;
+    width: 120px;
+    margin: 10px auto;
+    line-height: 2;
+    border-radius: 60px;
+    background-color: black;
+}
+
+.contactbtn h2:hover{
+    color: #E1C564;
+    transition: 2s;
+}
+
+.logo-gif2{
+    min-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer{
+    margin-top: 3.5rem;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer i{
+    color: black;
+    padding-bottom: 15px;
+}
+
+.footer a{
+    text-decoration: none;
+    background-color: var(--light-color);
+    margin-right: 1rem;
+    transition: var(--transition);
+}
+
+.footer a i:hover{
+    transition: .5s;
+    color: #E1C564;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0;
+}
+
+.list li a{
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.list li a:hover{
+    transition: .5s;
+    color:#E1C564;
+}
+
+.list li{
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 10px;
+    color: black;
+    font-weight: 500;
+    line-height: 2;
+}
