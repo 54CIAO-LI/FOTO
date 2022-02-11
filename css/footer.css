@@ -150,13 +150,12 @@ ul > li:hover ol {
 
 .foto-sub img{
     width: 80%;
-    margin-bottom: 30px;
     filter: grayscale(100) sepia(.5);
+    margin-bottom: 30px;
 }
 
 .foto-sub img:hover{
     opacity: 1;
-    box-shadow: 2px 2px 2px #caa728;
     filter: grayscale(0);
     transition: 1s;
     box-shadow: 3px 3px 3px #caa728;
@@ -174,6 +173,9 @@ ul > li:hover ol {
         transform: scale(1) translate(0);
     }
 }
+
+/* foto media */
+
 
 /* footer */
 .contactbtn{
@@ -203,7 +205,9 @@ ul > li:hover ol {
 
 .contactbtn h2:hover{
     color: #E1C564;
+    letter-spacing: 2px;
     transition: 2s;
+    transform: scale(1.1) ;
 }
 
 .logo-gif2{
@@ -222,7 +226,8 @@ ul > li:hover ol {
 
 .footer i{
     color: black;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    margin-top: 20px;
 }
 
 .footer a{
@@ -234,7 +239,8 @@ ul > li:hover ol {
 
 .footer a i:hover{
     transition: .5s;
-    color: #E1C564;
+    color: #fbf8ee;
+    transform: translateY(-3px) scale(1.2);
 }
 
 .footer ul li{
@@ -250,7 +256,8 @@ ul > li:hover ol {
 
 .list li a:hover{
     transition: .5s;
-    color:#E1C564;
+    letter-spacing: 1px;
+    color:#fbf8ee;
 }
 
 .list li{
@@ -262,4 +269,8 @@ p{
     color: black;
     font-weight: 500;
     line-height: 2;
+}
+
+.social, .list{
+    background-color: #E1C564;
 }
