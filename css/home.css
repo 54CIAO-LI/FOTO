@@ -23,7 +23,7 @@ body{
     font-size: 1.6em;
     font-family:  'Open Sans', sans-serif, 'Roboto', '思源黑體', '微軟正黑體';
     line-height: 1.6;
-    background: #fbf8ed;
+    /* background: #fbf8ed; */
 }
 
 
@@ -100,7 +100,7 @@ ul > li:hover ol {
     display: block;
 }
 
-
+/* 主畫面 */
 button, .btn{
     cursor: pointer;
     border: none;
@@ -145,7 +145,7 @@ h1, h2, h3{
 
 /* Header */
 #header{
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)),url(../img/index-background.png) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)),url(../img/index-background.JPG) center/cover no-repeat fixed;
     justify-content: flex-start;
     align-items: flex-end;
 }
@@ -231,6 +231,12 @@ h1, h2, h3{
     .foto-grid > div img{
         height: 100%;
         object-fit: cover;
+    }
+}
+
+@media(max-width: 576px){
+    .logo-nav ul{
+        display: none;
     }
 }
 

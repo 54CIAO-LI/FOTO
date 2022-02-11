@@ -2,19 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="./css/all.css">
     <title>FOTO</title>
-    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
-    <div class="index">
-            <a href="HOME.html"><img src="./img/logo.gif" class="index-Logo" alt=""></a>
-        <div class="bac">
-            <img src="./img/index-background.png" alt="">
-        </div>
-    </div>
+    <!-- LOGO + 選單列 -->
+    <nav class="logo-nav">
+        <a href="HOME.html"><img src="./img/LOGO.png" alt=""></a>
+        <ul>
+            <li><a href="HOME.html">HOME</a></li>
+            <li><a href="FOTO.html">FOTO</a>
+                <ol class="sub-nav">
+                    <!-- 子選單 -->
+                    <li><a href="BW1.html">B&W</a></li>
+                    <li><a href="COLOR.html">COLOR</a></li>
+                    <li><a href="FILM.html">FILM</a></li>
+                </ol>
+            </li>
+            <li><a href="VIDEO.html">VIDEO</a></li>
+            <li><a href="SHOP.html">SHOP</a></li>
+        </ul>
+    </nav>
+    <!-- Header -->
 
+    <header id="header" class="vh-100 flex">
+        <div class="container">
+            <div class="header-content">
+                <h1 style="color: #E1C564;">FOTO!</h1>
+                <br>
+                <h1 style="font-size: 24px;"><span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000"
+                        data-words='
+                    ["ʕ•ᴥ•ʔ!","ʕ◉ᴥ◉ʔ!","ʕ·ᴥ·ʔ!","ʕ≧ᴥ≦ʔ!"]'></span></h1>
+                <h3>CIAO-LI</h3>
+
+                <ul class="social-links">
+                    <li>
+                        <a href="" class="flex">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="HOME.html" class="flex">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 首頁第二欄 -->
+    <!-- <section id="foto" class="vh-100 py-7">
+        <div class="container">
+            <div class="foto-content">
+                <div class="title">
+                    <h2>FOTO</h2>
+                </div>
+
+                <div class="foto-grid grid">
+                    <div>
+                        <a href="BW1.html">B&W
+                            <img src="./img/B&W/BW4.JPG">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="COLOR.html">COLOR<img src="./img/COLOR/color1.JPG"></a>
+                    </div>
+                    <div>
+                        <a href="FILM.html">FILM<img src="./img/FILM/FILMCOVER3.JPG"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+
+    <!-- typewriting js -->
+    <script src="./typewriting-master/typewriting-master/typewriting.js"></script>
 </body>
 
 </html>
