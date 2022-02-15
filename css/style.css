@@ -247,7 +247,7 @@ ul > li:hover ol {
 
 /* 首頁第三欄 */
 .bac-3{
-    background-color: #E1C564;
+    background-color: #ead795;
     height: 100%;
     margin: 50px auto;
 
@@ -334,7 +334,7 @@ ul > li:hover ol {
 }
 
 .fototitle h1{
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 900;
     margin-bottom: 40px;
     letter-spacing: 10px;
@@ -359,7 +359,7 @@ ul > li:hover ol {
 }
 
 .FOTO-item li h2{
-    font-size: 30px;
+    font-size: 22px;
     line-height: 5;
     letter-spacing: 2px;
 }
@@ -1207,48 +1207,53 @@ textarea.contact-form-text{
 }
 
 /* FOOTER */
-.box h1 {
-    width: 100%;
-    height: 600px;
-    margin: 150px auto;
-    margin-top: 250px;
-}
-
-.footer_type p {
-    font-size: 10px;
-    text-align: center;
-    letter-spacing: 2px;
-    line-height: 1.8;
-    padding: 0 125px;
-}
-
-.footer_type{
-    margin: 0 auto;
-}
-
-.footer_type ul{
-    position: relative;
-}
-
-.footer_type li{
-    position: absolute;
+footer{
     left: 0;
-    margin: auto;
-
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-.footer_type li img{
-    width: 20px;
-    height: 20px;
-    margin: 5px 5px;
+.footer{
+    background: #E1C564;
 }
 
-.footer_type ul > a >img{
-    position: absolute;
-    right: 0;
-    width: 60px;
-    margin: 0 auto;
+.footer i{
+    color: black;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    margin-top: 20px;
 }
-.footer_type ul > a >i:hover{
-    color: #E1C564;
+
+.footer i:hover{
+    transition: .5s;
+    color: #fbf8ee;
+    transform: translateY(-3px) scale(1.1);
+}
+
+.footer-nav li{
+    display: inline-flex;
+}
+
+
+.footer-nav li a{
+    font-size: 1rem;
+    text-decoration: none;
+    padding-right: 15px;
+    color: black;
+    line-height: 3;
+    letter-spacing: .5px;
+    transition: .5s;
+}
+
+.footer-nav li a:hover{
+    font-size: 1rem;
+    color: #fbf8ee;
+    letter-spacing: 2px;
+}
+
+
+.footer p{
+    font-size: .5rem;
+    line-height: 2;
 }
