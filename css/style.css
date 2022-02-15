@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
 body {
-    font-size: 14px;
     font-family:  'Open Sans', sans-serif, 'Roboto', '思源黑體', '微軟正黑體';
     /* background-image: url('../img/background-image.png'); */
     margin: 0;
@@ -94,7 +93,7 @@ body {
     position: absolute;
     clear: both;
     right: 0;
-    top: 0;
+    top: 0;  
     margin: auto;
     padding-top: 65px;
 }
@@ -335,10 +334,10 @@ ul > li:hover ol {
 }
 
 .fototitle h1{
-    font-size: 30px;
+    font-size: 48px;
     font-weight: 900;
     margin-bottom: 40px;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     color: #E1C564;
 }
 
@@ -360,7 +359,7 @@ ul > li:hover ol {
 }
 
 .FOTO-item li h2{
-    font-size: 20px;
+    font-size: 30px;
     line-height: 5;
     letter-spacing: 2px;
 }
@@ -466,6 +465,14 @@ section p{
 .page a:hover{
     color: #E1C564;
 }
+
+.color-foto{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #E1C564;
+    height: 500px;
+}
+
 
 .color-foto img{
     height: 500px;
@@ -902,7 +909,8 @@ section p{
 
 .nav-item li a:hover{
     color: #E1C564;
-    transition: 1s;
+    letter-spacing: 3px;
+    transition: .5s;
 }
 
 .item{
