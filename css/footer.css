@@ -118,12 +118,14 @@ ul > li:hover ol {
 .foto-sub{
     margin: 0  auto;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     /* background: #f1e6be; */
 }
  
 .foto-sub ul{
     display: flex;
-    padding: 0 100px;
+    /* padding: 0 100px; */
 }
 
 .foto-sub li{
@@ -149,7 +151,7 @@ ul > li:hover ol {
 }
 
 .foto-sub img{
-    width: 80%;
+    /* width: 80%; */
     filter: grayscale(100) sepia(.5);
     margin-bottom: 30px;
 }
@@ -180,7 +182,7 @@ ul > li:hover ol {
 /* footer */
 .contactbtn{
     text-align: center;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 .contactbtn li a{
@@ -216,7 +218,7 @@ ul > li:hover ol {
     margin: 0 auto;
 }
 
-.footer{
+footer{
     margin-top: 3.5rem;
     margin: 0 auto;
     text-align: center;
@@ -224,26 +226,26 @@ ul > li:hover ol {
     justify-content: center;
 }
 
-.footer i{
+footer i{
     color: black;
     padding-bottom: 10px;
     margin-top: 20px;
 }
 
-.footer a{
+footer li a{
     text-decoration: none;
     background-color: var(--light-color);
     margin-right: 1rem;
     transition: var(--transition);
 }
 
-.footer a i:hover{
+footer a i:hover{
     transition: .5s;
     color: #fbf8ee;
     transform: translateY(-3px) scale(1.2);
 }
 
-.footer ul li{
+footer ul li{
     display: inline-block;
     padding: 0;
 }

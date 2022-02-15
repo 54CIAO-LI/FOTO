@@ -38,6 +38,22 @@ body{
     position: fixed;
 }
 
+.logo-nav img{
+    animation: logo 1.5s linear infinite;
+}
+
+@keyframes logo{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 .logo-nav ul{
     display: inline-flex;
     text-align: center;
