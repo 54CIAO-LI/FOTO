@@ -236,13 +236,13 @@ ul > li:hover ol {
 
 @keyframes hfimg{
     0%{
-        transform: scale(1) translate(0);
+        transform: scale(1);
     }
     50%{
-        transform: scale(1.1) translateY(5px);
+        transform: scale(1.1);
     }
     100%{
-        transform: scale(1) translate(0);
+        transform: scale(1);
     }
 }
 
