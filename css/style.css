@@ -742,7 +742,7 @@ section p{
     text-align: center;
     margin: 0 auto;
     background-color: #E1C564;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 .vv video{
@@ -750,19 +750,43 @@ section p{
     height: 450px;
 }
 
+.video-title{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    text-align: center;
+    animation: vt 3s infinite ;
+}
+
+@keyframes vt{
+    0%{
+        color: black;
+        letter-spacing: 5px;
+    }
+    50%{
+        color: #E1C564;
+        letter-spacing: 10px;
+    }
+    100%{
+        color: black;
+        letter-spacing: 5px;
+    }
+}
+
 .vbac{
     margin:0 auto;
     text-align: center;
 }
 
-.vbac p{
-    font-size: 20px;
+.vbac h2{
+    font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 2px;
     padding-top: 30px;
+    margin-bottom: 60px;
 }
 
-.vbac p:hover{
+.vbac h2:hover{
     color: #E1C564;
 }
 
@@ -774,6 +798,16 @@ section p{
 .vbac a video:hover{
     transition: 3s;
     filter: drop-shadow(2px 2px 2px #e1c564) grayscale(0);
+}
+.vbac p{
+    width: 30%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
 }
 
 /* SHOP page */
