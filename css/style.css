@@ -917,6 +917,7 @@ section p{
     color: black;
     font-weight: 900;  
     font-size: 15px;
+    margin: 0 10px;
 }
 
 .nav-icon i:hover{
@@ -958,8 +959,8 @@ section p{
 
 .item img{
     width: 50%;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px #dbdbdb;
+    border: 20px solid black;
+    box-shadow: 3px 3px 3px #dbdbdb;
 }
 
 .itembtn{
@@ -1037,6 +1038,7 @@ section p{
     align-items: center;
     justify-content: center;
 }
+
 
 .addtocart a {
     margin: 0 20px;
