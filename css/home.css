@@ -120,9 +120,11 @@ section a{
     height: 350px;
     border: 30px solid black;
     transition: .5s;
+    filter: sepia(.6);
 }
 
 .foto-section li img:hover{
+    filter: sepia(0);
     height: 320px;
     box-shadow: 15px 15px 0 #E1C564;
 }
@@ -153,7 +155,7 @@ section a{
 }
 
 .videobac video{
-    height: 300px;
+    height: 400px;
     margin-top: 50px;
     transition: 1s;
 }
@@ -165,7 +167,7 @@ section a{
 .videobac{
     margin-top: 30px;
     background-color: black;
-    height: 400px;
+    height: 500px;
 }
 
 #SHOP{
@@ -187,5 +189,6 @@ section a{
 }
 
 .shop-home img:hover{
+    transform: scale(1.1);
     box-shadow: 20px 20px 0 #E1C564;
 }
