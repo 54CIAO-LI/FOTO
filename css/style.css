@@ -15,6 +15,9 @@ body {
 
 
 /* -- HOME PAGE -- */
+#nav1{
+    color:#E1C564;
+}
 
 .index {
     margin: 0 auto;
@@ -78,231 +81,11 @@ body {
     }
 }
 
-/*  主選單 */
-.logo-nav{
-    width: 100%;
-    display: inline-flex; 
-    margin: 0 auto;
-    position: relative;
-}
-
-.logo-nav ul{
-    display: inline-flex;
-    text-align: center;
-    float: right;
-    position: absolute;
-    clear: both;
-    right: 0;
-    top: 0;  
-    margin: auto;
-    padding-top: 65px;
-}
-
-.logo-nav li a{
-    flex-grow: 1;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: normal;
-    padding: 0 10px;
-    /* border:  2px solid goldenrod; */
-}
-
-.logo-nav li a:hover{
-    color: #E1C564;
-}
-
-#nav1{
-    color:#E1C564;
-}
-
-#navf{
-    color:#E1C564;
-}
-
-#navv{
-    color: #E1C564;
-}
-
-#navs{
-    color: #E1C564;
-}
-
-/* 子選單 */
-ol{
-    display: none;
-    position: absolute;
-}
-
-.sub-nav li{
-    display: flex;
-}
-
-
-.sub-nav li a {
-    text-align: left;
-    line-height: 1.5;
-} 
-
-ul > li:hover ol {
-    display: block;
-}
-
-/* 首頁主影片 */
-.homevideobac{
-    margin: 0 auto;
-    text-align: center;
-    background-color: black;
-    height: 500px;
-}
-
-#homevid video{
-    margin: 25px auto;
-    height: 450px;
-}
-
-#homevid video:hover{
-    transition: 2s;
-    filter: sepia(.5) drop-shadow(2px 2px 2px #caa728);
-}
-
-
-/*  首頁第二欄 */
-.section h1{
-    font-size: 36px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-align: center;
-    margin: 50px auto;
-    color: #E1C564;
-}
-
-.section a{
-    text-decoration: none;
-}
-
-.section a > h1:hover{
-    transition: 2s;
-    text-shadow: 2px 2px 2px #caa728;
-}
-
-.foto-sub{
-    margin: 0  auto;
-    text-align: center;
-    /* background: #f1e6be; */
-}
- 
-.foto-sub ul{
-    display: flex;
-}
-
-.foto-sub li{
-    flex-basis: 90%;
-
-}
-
-.foto-sub li h2{
-    color:black;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    padding-top: 10px;
-}
-
-.foto-sub li a{
-    text-decoration: none;
-}
-
-.foto-sub li a > h2:hover{
-    color: #E1C564;
-    transition: .5s;
-    letter-spacing: 3px;
-}
-
-.foto-sub img{
-    width: 60%;
-    margin-bottom: 30px;
-    filter: grayscale(100) sepia(.5);
-}
-
-.foto-sub img:hover{
-    opacity: 1;
-    box-shadow: 2px 2px 2px #caa728;
-    filter: grayscale(0);
-    transition: 1s;
-    box-shadow: 3px 3px 3px #caa728;
-}
-
-@keyframes hfimg{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-
-/* 首頁第三欄 */
-.bac-3{
-    background-color: #ead795;
-    height: 100%;
-    margin: 50px auto;
-
-}
-.bac-3 ul{
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-items: center;
-}
-
-.bac-3 li{
-    flex: 30%;
-}
-
-.bac-3 li a{
-    text-decoration: none;
-}
-
-.bac-3 li a h2{
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    margin: 10px auto;
-} 
-
-.bac-3 li a h2:hover{
-    color: white;
-    transition: 1s;
-}
-
-.bac-3 li video{
-    margin: 10px 10px 10px 25%;
-    margin-bottom: 30px;
-}
-
-.bac-3 li video:hover{
-    transition: 1s;
-    box-shadow: 4px 4px 4px #caa728;
-}
-
-.bac-3 li img{
-    margin: 10px 10px 10px 30%;
-    margin-bottom: 30px;
-}
-
-.bac-3 li img:hover{
-    transition: 1s;
-    box-shadow: 4px 4px 4px #caa728;
-}
-
 /* contact btn */
 .contactbtn{
     text-align: center;
     margin: 30px auto;
+    padding-top: 50px;
 }
 
 .contactbtn li a{
@@ -324,10 +107,14 @@ ul > li:hover ol {
     line-height: 2;
     border-radius: 50px;
     background-color: black;
+    transition: .5s;
 }
 
 .contactbtn h2:hover{
-    animation: hfimg 1.5s linear;
+    transform: scale(1.1);
+    letter-spacing: 2px;
+    width: 120px;
+    color: #E1C564;
 }
 
 /* FOTO PAGE */
@@ -337,7 +124,7 @@ ul > li:hover ol {
 
 .fototitle h1{
     font-size: 36px;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 40px;
     letter-spacing: 10px;
     color: #E1C564;
@@ -361,7 +148,8 @@ ul > li:hover ol {
 }
 
 .FOTO-item li h2{
-    font-size: 22px;
+    font-size: 2rem;
+    font-weight: 600;
     line-height: 5;
     letter-spacing: 2px;
 }
@@ -743,7 +531,6 @@ section p{
     height: 500px;
     text-align: center;
     margin: 0 auto;
-    background-color: #E1C564;
     margin-bottom: 60px;
 }
 
@@ -752,8 +539,13 @@ section p{
     height: 450px;
 }
 
+.sec2{
+    padding-top: 100px;
+}
+
 .video-title{
     font-size: 3rem;
+    font-weight: 700;
     letter-spacing: 5px;
     margin-bottom: 60px;
     text-align: center;
@@ -782,7 +574,7 @@ section p{
 
 .vbac h2{
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 2px;
     padding-top: 30px;
     margin-bottom: 60px;
@@ -834,10 +626,12 @@ section p{
 
 .shopban .bigtitle h1{
     font-size: 50%;
+    font-weight: 600;
     margin: 50px 50px;
     line-height: 2;
     letter-spacing: 2px;
     animation: shoph1 2s linear;
+    transition: .5s;
 }
 
 @keyframes shoph1{
@@ -896,6 +690,7 @@ section p{
     padding-left: 5px;
     letter-spacing: 1px;   
     color: black;
+    font-weight: 600;
 }
 
 .nav-item #i1 a{
@@ -945,6 +740,7 @@ section p{
 
 .nav-item li a{
     font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
     color: black;   
 }
@@ -1193,13 +989,15 @@ section p{
 
 .contact-section h1{
     font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
     line-height: 1.6;
     text-align: center;
     color: white;
 }
 
 .border{
-    width: 100px;
+    width: 150px;
     height: 10px;
     background: #E1C564;
     margin: 20px auto;
@@ -1236,12 +1034,14 @@ textarea.contact-form-text{
 
 .contact-form-btn{
     font-weight: bold;
+    letter-spacing: 2px;
     float: right;
     border: 0;
     background: #E1C564;
     padding: 12px 50px;
     border-radius: 20px;
     cursor: pointer;
+    transition: .5s;
 }
 
 .contact-form-btn:hover{

@@ -4,44 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/home.css">
     <title>FOTO</title>
 </head>
 
 <body>
 
-    <!-- LOGO + 選單列 -->
-    <nav class="logo-nav">
-        <a href="HOME.html"><img src="./img/LOGO.png" alt=""></a>
-        <ul>
-            <li><a href="HOME.html">HOME</a></li>
-            <li><a href="FOTO.html">FOTO</a>
-                <ol class="sub-nav">
-                    <!-- 子選單 -->
-                    <li><a href="BW1.html">B&W</a></li>
-                    <li><a href="COLOR.html">COLOR</a></li>
-                    <li><a href="FILM.html">FILM</a></li>
-                </ol>
-            </li>
-            <li><a href="VIDEO.html" id="navv">VIDEO</a></li>
-            <li><a href="SHOP.html">SHOP</a></li>
-        </ul>
-    </nav>
-
-    <header class="vv">
-        <video src="./video/vi0.mov" type="video/vi0.mov" poster="./video/videocover.png" autoplay muted loop></video>
+    <header class="header">
+        <nav class="logo-nav">
+            <!-- 主選單 -->
+            <a href="HOME.html"><img src="./img/LOGO.png" alt=""></a>
+            <ul class="main-nav">
+                <li><a href="HOME.html">HOME</a></li>
+                <li><a href="FOTO.html">FOTO</a></li>
+                <li><a href="VIDEO.html" id="nav1">VIDEO</a></li>
+                <li><a href="SHOP.html">SHOP</a></li>
+                <i class="fa fa-solid fa-camera-retro"></i>
+            </ul>
+        </nav>
     </header>
-    <div class="video-title"> 
-        <h1>VIDEO</h1>
-    </div>
-    <section>
+
+    <section class="home-ban">
+        <div class="home-v">
+            <h1>VIDEO!</h1>
+            <video src="./video/vi0.mov" type="video/vi0.mov" poster="./video/videocover.png" autoplay muted loop></video>
+        </div>
+    </section>
+
+    <section class="sec2">
         <div class="vbac">
             <ul>
                 <li>
                     <a href="https://www.youtube.com/watch?v=udzZmQNhIy0" target="_blank"><video src="./video/vi1.mov"
                             type="video/vi1.mov" poster="./video/video1.png" autoplay muted loop id="vv1"></video></a>
                     <h2>| Keelung 基隆 |</h2>
-                    <p></p>
+                    <!-- <p></p> -->
                 </li>
                 <li>
                     <a href="https://www.youtube.com/watch?v=UtwgWmywcDM" target="_blank"><video src="./video/vv.MOV"
