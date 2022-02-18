@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/CT.CSS">
+    <link rel="stylesheet" href="./css/lightbox.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.css">
     <title>FOTO</title>
 </head>
@@ -24,55 +26,45 @@
         </nav>
 
     </header>
-    <!-- 首頁影片 -->
-    <div class="homevideobac">
-        <div id="homevid">
-            <a href="VIDEO.html"><video src="./video/v1.MOV" type="video/v1.MOV" poster="./video/HO.png" autoplay muted
-                    loop></video>
+
+    <main class="color-foto">
+        <video src="./img/COLOR/color.mp4" type="video/mp4" autoplay loop poster="./img/COLOR/color1.JPG"></video>
+    </main>
+
+    <div class="container">
+        <div class="gallery">
+            <a href="./img/COLOR/L1/C1.png" data-lightbox="models">
+                <img src="./img/COLOR/L1/C1.JPG">
+            </a>
+            <a href="./img/COLOR/L1/C02.jpg" data-lightbox="models">
+                <img src="./img/COLOR/L1/C02.jpg">
+            </a>
+            <a href="./img/COLOR/L1/C03.JPG" data-lightbox="models">
+                <img src="./img/COLOR/L1/C03.JPG">
+            </a>
+            <a href="./img/COLOR/L1/C4.JPG" data-lightbox="models">
+                <img src="./img/COLOR/L1/C4.JPG">
+            </a>
+            <a href="./img/COLOR/L1/C5.JPG" data-lightbox="models">
+                <img src="./img/COLOR/L1/C5.JPG">
+            </a>
+            <a href="./img/COLOR/L1/C06.jpg" data-lightbox="models">
+                <img src="./img/COLOR/L1/C06.jpg">
             </a>
         </div>
     </div>
-    </header>
-    <!-- 首頁第二欄 -->
-    <div class="section">
-        <a href="FOTO.html">
-            <h1>FOTO</h1>
-        </a>
-        <div class="foto-sub">
-            <ul>
-                <li><a href="BW1.html">
-                        <h2>B&W</h2><img src="./img/B&W/BW4.JPG">
-                    </a></li>
-                <li><a href="COLOR.html">
-                        <h2>COLOR</h2><img src="./img/COLOR/color4.JPG">
-                    </a></li>
-                <li><a href="FILM.html">
-                        <h2>FILM</h2><img src="./img/FILM/F2-5.jpg">
-                    </a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- 首頁第三欄 -->
-    <div class="bac-3">
-        <ul>
-            <li><a href="VIDEO.html">
-                    <h2>VIDEO</h2><video src="./video/vi5.MOV" poster="./video/homevideo.png" width="50%" muted loop
-                        autoplay></video>
-                </a>
-            </li>
-            <li><a href="SHOP.html">
-                    <h2>SHOP</h2><img src="./img/shop/pa.png" width="40%">
-                </a>
-            </li>
-        </ul>
-    </div>
 
-    <!-- CONTACT -->
-    <ul class="contactbtn">
-        <li><a href="CONTACT.html">
-                <h2>CONTACT</h2>
-            </a></li>
-    </ul>
+    <div class="page">
+        <!-- <a href="COLOR.html">«</a> -->
+        <a href="COLOR.html" id="pagec">1</a>
+        <a href="COLOR2.html">2</a>
+        <a href="COLOR3.html">3</a>
+        <a href="COLOR4.html">4</a>
+        <a href="COLOR5.html">5</a>
+        <a href="COLOR6.html">6</a>
+        <a href="COLOR7.html">7</a>
+        <a href="COLOR2.html">»</a>
+    </div>
 
     <!-- FOOTER -->
     <footer>
@@ -99,7 +91,7 @@
         </div>
     </footer>
 
-
+    <script src="./js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
