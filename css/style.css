@@ -340,14 +340,17 @@ body {
 
 .colorlist img{
     height: 250px;
+    transition: 1s;
 }
 
 .colorlist img:hover{
-    opacity: .8;
+    filter: sepia(.5);
+    transform: scale(1.1);
 }
 
 .colorlist #c1{
     margin: 150px 50px;
+    margin-top: 0;
     margin-left: 0;
     animation: c1 3s ease-in;
 }
@@ -423,6 +426,7 @@ body {
 
 .colorlist #c6{
     animation: c6 5s ease-in;
+    margin-bottom: 50px;
 }
 
 @keyframes c6{
