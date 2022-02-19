@@ -123,7 +123,7 @@ body {
 }
 
 .fototitle h1{
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 40px;
     letter-spacing: 10px;
@@ -151,7 +151,8 @@ body {
     font-size: 2rem;
     font-weight: 600;
     line-height: 5;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
+    transition: 2s;
 }
 
 .FOTO-item li a{
@@ -160,20 +161,19 @@ body {
 }
 
 .FOTO-item li a > h2:hover{
-    transition: 2s;
-    color: #caa728;
-    letter-spacing: 5px;
+    color: #E1C564;
+    letter-spacing: .5rem;
 }
 
 .FOTO-item img{
     width: 50%;
+    transition: 1s;
     filter: grayscale(100);
 }
 
 .FOTO-item img:hover{
     filter: grayscale(0);
-    transition: 1s;
-    box-shadow: 3px 3px 3px #caa728;
+    box-shadow: 20px 20px 0 #E1C564;
 }
 
 .logo-gif2{
@@ -662,6 +662,7 @@ body {
     letter-spacing: 2px;
     padding-top: 30px;
     margin-bottom: 60px;
+    transition: 1s;
 }
 
 .vbac h2:hover{
@@ -670,12 +671,13 @@ body {
 
 .vbac video{
    height: 300px;
-   filter: grayscale(100);
+   filter: grayscale(100) drop-shadow(0);
+   transition: 2s;
 }
 
 .vbac a video:hover{
-    transition: 3s;
-    filter: drop-shadow(2px 2px 2px #e1c564) grayscale(0);
+    transition: 2s;
+    filter: drop-shadow(20px 20px 0 #e1c564) grayscale(0);
 }
 .vbac p{
     width: 30%;
