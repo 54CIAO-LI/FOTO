@@ -123,10 +123,10 @@ body {
 }
 
 .fototitle h1{
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 40px;
-    letter-spacing: 10px;
+    letter-spacing: 1rem;
     color: #E1C564;
 }
 
@@ -169,6 +169,7 @@ body {
     width: 50%;
     transition: 1s;
     filter: grayscale(100);
+    border: 30px solid black;
 }
 
 .FOTO-item img:hover{
@@ -611,21 +612,6 @@ body {
 }
 
 /* VIDEO PAGE */
-.vv{
-    height: 500px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 60px;
-}
-
-.vv video{
-    margin-top: 25px;
-    height: 450px;
-}
-
-.sec2{
-    padding-top: 100px;
-}
 
 .video-title{
     font-size: 3rem;
@@ -658,28 +644,35 @@ body {
 
 .vbac h2{
     font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: .2rem;
     padding-top: 30px;
     margin-bottom: 60px;
     transition: 1s;
+    color: black;
 }
 
 .vbac h2:hover{
     color: #E1C564;
+    letter-spacing: .4rem;
 }
 
-.vbac video{
+.sec2 .vbac video{
    height: 300px;
-   filter: grayscale(100) drop-shadow(0);
-   transition: 2s;
+   -webkit-filter: grayscale(1) drop-shadow(0) ;
+   transition: 1s;
 }
 
 .vbac a video:hover{
-    transition: 2s;
     filter: drop-shadow(20px 20px 0 #e1c564) grayscale(0);
 }
-.vbac p{
+
+.vbac ul li {
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+
+/* .vbac p{
     width: 30%;
     margin: 0 auto;
     align-items: center;
@@ -688,7 +681,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     line-height: 2;
-}
+} */
 
 /* SHOP page */
 /* SHOP BANNER */
