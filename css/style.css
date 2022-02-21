@@ -285,10 +285,35 @@ body {
 .color-foto{
     margin: 0 auto;
     text-align: center;
-    background-color: #E1C564;
+    /* background-color: #E1C564; */
     height: 500px;
 }
 
+.cltitle{
+    display: flex;
+    margin: 80px auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.cltitle a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.cltitle h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: .5rem;
+    transition: .5s;
+}
+
+.cltitle h3:hover{  
+    font-weight: 700;
+    letter-spacing: .6rem;
+}
 
 .color-foto img{
     height: 500px;
@@ -298,6 +323,7 @@ body {
 
 .color-foto video{
     height: 500px;
+    border: 30px solid black;
 }
 
 .color-foto video:hover{
