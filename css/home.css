@@ -17,6 +17,7 @@ body {
 }
 
 .home-ban h1{
+    color: black;
     font-weight: 700;
     font-size: 6rem;
     letter-spacing: 1rem;

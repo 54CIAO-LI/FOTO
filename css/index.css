@@ -30,7 +30,7 @@ body{
 /*  主選單 */
 .logo-nav{
     width: 100%;
-    display: inline-flex; 
+    display: inline-flex;
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -55,49 +55,47 @@ body{
 }
 
 .logo-nav ul{
-    display: inline-flex;
-    text-align: center;
-    float: right;
     position: absolute;
-    clear: both;
     right: 0;
     top: 0;
     margin: auto;
-    padding-top: 65px;
+    padding-top: 50px;
 }
 
-.logo-nav li a{
+.logo-nav a{
+    text-decoration: none;
+    color: #fbf8ed;
+    font-size: 30px;
+    margin-right: 50px;
+    text-shadow: 3px 3px 0 black;
+    transition: .5s;
+}
+
+.logo-nav a:hover{
+    color: #E1C564;
+}
+
+.logo-nav a i{
+    animation: logo 1.5s linear infinite;
+}
+
+
+/* .logo-nav li a{
     flex-grow: 1;
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 600;
     padding: 0 10px;
-    /* border:  2px solid goldenrod; */
-}
+    border:  2px solid goldenrod;
+} */
 
 .logo-nav li a:hover{
     color: #E1C564;
 }
 
-#nav1{
-    color:#E1C564;
-}
-
-#navf{
-    color:#E1C564;
-}
-
-#navv{
-    color: #E1C564;
-}
-
-#navs{
-    color: #E1C564;
-}
-
 /* 子選單 */
-ol{
+/* ol{
     display: none;
     position: absolute;
 }
@@ -114,7 +112,7 @@ ol{
 
 ul > li:hover ol {
     display: block;
-}
+} */
 
 /* 主畫面 */
 button, .btn{
