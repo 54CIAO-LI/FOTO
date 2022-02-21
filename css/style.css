@@ -319,6 +319,7 @@ body {
     height: 500px;
     animation: colorimg 2s ease-in;
     margin-bottom: 100px;
+    border: 30px solid black;
 }
 
 .color-foto video{
