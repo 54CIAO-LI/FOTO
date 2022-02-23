@@ -7,7 +7,61 @@
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>FOTO</title>
+    <style>
+        html,
+        body {
+            position: relative;
+        }
+
+        body {
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            /* font-size: 18px; */
+            background: #E1C564;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            height: 500px;
+            object-fit: cover;
+            border: 20px solid black;
+        }
+
+        .swiper-pagination {
+            margin-bottom: 20px;
+        }
+
+        .swiper-pagination span {
+            background-color: #E1C564;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,25 +81,43 @@
     </header>
 
     <!-- 上方圖片區塊 -->
-    <main class="bwfoto">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/B&W/BW7.JPG" alt="B7"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW1.JPG" alt="B1"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW2.JPG" alt="B2"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW3.JPG" alt="B3"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW4.JPG" alt="B4"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW5.JPG" alt="B5"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW6.JPG" alt="B6"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- <main class="bwfoto">
         <video src="./img/B&W/BW.mp4" poster="./img/B&W/BW7.JPG" type="video/mp4" width="100%" autoplay loop></video>
-    </main>
+    </main> -->
     <!-- 下方圖片區塊 -->
     <ul class="bwtitle">
-        <li><a href="FOTO.html"><h3>FOTO</h3></a></li>
-        <li><a href="BW1.html"><h3 id="fh">BLACK AND WHITE</h3></a></li>
+        <li><a href="FOTO.html">
+                <h3>FOTO</h3>
+            </a></li>
+        <li><a href="BW1.html">
+                <h3 id="fh">BLACK AND WHITE</h3>
+            </a></li>
     </ul>
 
     <ul class="bwlist1">
         <li>
-            <img src="./img/B&W/BW7/BW1.png">
-            <img src="./img/B&W/BW7/BW2.png">
-            <img src="./img/B&W/BW7/BW3.png">
+            <img src="./img/B&W/BW7/BW1.png" alt="">
+            <img src="./img/B&W/BW7/BW2.png" alt="">
+            <img src="./img/B&W/BW7/BW3.png" alt="">
         </li>
         <li>
-            <img src="./img/B&W/BW7/BW4.png">
-            <img src="./img/B&W/BW7/BW5.png">
-            <img src="./img/B&W/BW7/BW6.png">
+            <img src="./img/B&W/BW7/BW4.png" alt="">
+            <img src="./img/B&W/BW7/BW5.png" alt="">
+            <img src="./img/B&W/BW7/BW6.png" alt="">
         </li>
         <li>
             <img src="./img/B&W/BW7/BW7.png" alt="">
@@ -71,7 +143,7 @@
                 <h2>CONTACT</h2>
             </a></li>
     </ul>
-    
+
     <!-- FOOTER -->
     <footer>
         <a href="INDEX.html"><img src="./img/logo.gif" alt=""></a>
@@ -96,6 +168,16 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
