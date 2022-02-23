@@ -7,7 +7,66 @@
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>FOTO</title>
+
+    <style>
+        html,
+        body {
+            position: relative;
+        }
+
+        body {
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            /* font-size: 18px; */
+            background: black;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            height: 500px;
+            object-fit: cover;
+            transition: 1s;
+        }
+
+        .swiper-slide img:hover{
+            filter: sepia(.3);
+        }
+
+        .swiper-pagination {
+            margin-bottom: 20px;
+        }
+
+        .swiper-pagination span {
+            background-color: #E1C564;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,30 +86,43 @@
     </header>
 
     <!-- 底片上方圖 -->
-    <main class="film-foto">
-        <img src="./img/FILM/FILMCOVER3.JPG">
-    </main>
-    
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/FILM/FILMCOVER3.JPG" alt="B3"></div>
+            <div class="swiper-slide"><img src="./img/FILM/FILMCOVER.JPG" alt="B1"></div>
+            <div class="swiper-slide"><img src="./img/FILM/FILMCOVER2.jpg" alt="B2"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- <main class="film-foto">
+        <img src="./img/FILM/FILMCOVER2.jpg">
+    </main> -->
+
     <ul class="bwtitle">
-        <li><a href="FOTO.html"><h3>FOTO</h3></a></li>
-        <li><a href="FILM.html"><h3 id="fh">FILM</h3></a></li>
+        <li><a href="FOTO.html">
+                <h3>FOTO</h3>
+            </a></li>
+        <li><a href="FILM.html">
+                <h3 id="fh">FILM</h3>
+            </a></li>
     </ul>
 
     <!-- 底片下方圖 -->
     <section>
         <div class="filmlist">
-            <img src="./img/FILM/FILM3-1.png" width="80%" id="fimg1">
-            <img src="./img/FILM/FILM3-2.png" width="80%" id="fimg2">      
+            <img src="./img/FILM/FILM3-1.png" width="80%" id="fimg1" alt="">
+            <img src="./img/FILM/FILM3-2.png" width="80%" id="fimg2" alt="">
         </div>
     </section>
 
     <!-- 切換頁面按鈕 -->
-    <div>
-        <ul class="filmbtn">
-            <li><a href="FILM.html"></a></li>
-            <li><a href="FILM2.html"></a></li>
-            <li><a href="FILM3.html" id="s1"></a></li>
-        </ul>
+    <div class="page">
+        <a href="FILM2.html">«</a>
+        <a href="FILM.html">1</a>
+        <a href="FILM2.html">2</a>
+        <a href="FILM3.html" id="pagec">3</a>
+        <!-- <a href="FILM2.html">»</a> -->
     </div>
 
     <!-- CONTACT -->
@@ -84,6 +156,16 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
