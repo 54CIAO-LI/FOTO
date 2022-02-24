@@ -17,7 +17,7 @@
             width: 90%;
             height: 90%;
             align-items: center;
-            justify-content: center;
+            justify-content:space-between;
         }
 
         .logo-nav ul {
@@ -59,6 +59,8 @@
             font-size: 0;
             display: none;
         }
+
+    
 
         @media (max-width: 767.98px) {
             .main-nav  i {
