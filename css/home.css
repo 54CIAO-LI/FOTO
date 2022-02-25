@@ -174,7 +174,8 @@ section a{
 }
 
 .videobac video:hover{
-    box-shadow: 10px 10px 3px #E1C564;
+    transform: scale(1.1);
+    box-shadow: 10px 10px  #E1C564;
 }
 
 .videobac{
