@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" href="./img/d.png">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>FOTO</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-section">
+            <div class="logo">
+                <a href="HOME.html"><img src="./img/LOGO.png" alt=""></a>
+                <img src="./img/d.png" alt="" height="60px" id="menu-btn" onclick="togglemenu()">
+            </div>
+
+            <!-- nav -->
+            <nav class="nav">
+                <ul id="menuList">
+                    <li><a href=""><i class="fa-solid fa-camera-retro"></i></a></li>
+                    <li><a href="HOME.html">🏠&ensp;HOME</a></li>
+                    <li><a href="FOTO.html">📷&ensp;FOTO</a></li>
+                    <li><a href="VIDEO.html">🎥&ensp;VIDEO</a></li>
+                    <li><a href="SHOP.html">🛒&ensp;SHOP</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- top visual -->
+    <section>
+       <div class="top">
+        <h1>HELLO!</h1>
+        <a href="VIDEO.html"><video src="./video/v1.MOV" type="video/v1.MOV" width="80%" poster="./video/HO.png" autoplay loop muted></video></a>
+       </div>
+    </section>
+
+    <!-- foto -->
+    <h2>FOTO</h2>
+    <!-- video -->
+    <section class="videosec">
+        <div class="border">
+            <div class="line">
+            </div>
+            <div class="innerborder">
+                <!-- <a href="BW1.html"><img src="./img/home_img/BW.JPG" alt=""></a> -->
+                <a href="VIDEO.html"><video src="./video/vi0.mov" type="video/mov" poster="./video/vi0.mov" muted autoplay loop></video></a>
+            </div>
+                <img src="./img/logo.gif" alt="" height="30px">
+                <a href="VIDEO.html"><h3>VIDEO</h3></a>
+            <div class="fbtn">
+                <h4>+</h4>
+                <ul>
+                    <li><p id="circle1"></p></li>
+                    <li><p id="circle2"></p></li>
+                </ul>
+            </div>
+            <div class="sq">
+                <ul>
+                    <li><p id="sq1"></p></li>
+                    <li><p id="sq2"></p></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "200px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>

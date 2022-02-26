@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'Open Sans', sans-serif, 'Roboto', '思源黑體', '微軟正黑體';
+}
+.navcon{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin: 30px 0; 
+}
+.menu-icon{
+    width: 50px;
+    cursor: pointer;
+    display: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 700px){
+    .navcon{
+        margin-right: 40px;
+    }
+    nav ul{
+        width: 100%;
+        background: #E1C564;
+    }
+    
+    nav ul li{
+        display: block;
+        /* margin-top: 10px;
+        margin-bottom: 10px; */
+    }
+    .logo{
+        width: 50px;
+    }
+ 
+    .menu-icon{
+        display: block;
+        width: 30px;
+        margin-left: 40px;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: .5s;
+    }
+    
+}
