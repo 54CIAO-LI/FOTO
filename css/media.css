@@ -121,6 +121,30 @@ h2{
     color: #E1C564;
 }
 
+/* 圖片區塊 */
+.bw{
+    position: relative;
+}
+
+.bw img{
+
+    width: 70%;
+}
+
+.bw h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+    margin: auto;
+}
+
 /* 影片區塊 */
 .videosec{
     width: 80%;
