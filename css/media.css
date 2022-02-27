@@ -170,12 +170,15 @@ h2{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: shine 3s linear infinite;
+    animation: shine 2.5s linear infinite;
 }    
 
     @keyframes shine {
       to {
         background-position: 200% center;
+      }
+      50%{
+          letter-spacing: 6px;
       }
     }
 
