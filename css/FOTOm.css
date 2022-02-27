@@ -113,10 +113,9 @@ section{
     }
 }
 
-h2{
+#fft{
     text-align: center;
     font-size: 3.5rem;
-    margin-top: 10%;
     line-height: 1.5;
     color: black;
     text-shadow: .3rem .3rem #E1C564;
@@ -134,15 +133,19 @@ h2{
 }
 
 .bw img, .color img, .film img{
-    margin-top: 30px;
     border: .5rem solid black;
     border-radius: 5px;
     width: 70%;
     box-shadow: 10px 10px 0 #E1C564;
+    margin: 30px;
+}
+
+#ff{
+    margin-bottom: 0;
 }
 
 .bw h5, .color h5, .film h5{
-    font-size: .5rem;
+    font-size: 1.5rem;
     font-family: 'Press Start 2P';
     font-weight: 400;
     letter-spacing: 3px;
@@ -162,8 +165,8 @@ h2{
 }
 
 .bw h5{
-    top: 80px;
-    line-height: 2.5;
+    top: 60px;
+    line-height: 2.2;
 }
 
 .linear-wipe{
