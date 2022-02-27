@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&family=Press+Start+2P&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,21 +11,30 @@ body {
     background-color: #fbf8ee;
 }
 
+a{
+    text-decoration: none;
+}
+
 .logo{
     background: #fbf8ee;
     display: flex;
     justify-content: space-between;
 }
 
+#l1{
+    margin-top: 10px;
+}
+
 #menu-btn{
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 nav ul{
     width: 90%;
     overflow: hidden;
     background-color: #E1C564;
+    height: 280px;
     transition: 1s;
     border-top: 0;
     border-bottom: 0;
@@ -43,7 +54,7 @@ nav li{
 nav ul li a{
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 30px;
     letter-spacing: 2px;
     line-height: 1.8;
     color: black;
@@ -110,7 +121,7 @@ h2{
     color: #E1C564;
 }
 
-/* 第二區塊外框 */
+/* 影片區塊 */
 .videosec{
     width: 80%;
     margin: 0 auto;
@@ -138,9 +149,8 @@ h2{
     margin: 0 auto;
     /* border: 10px solid black; */
     background: #E1C564;
-    border-radius: 20px 20px 30px 30px;
-    filter: sepia(.3);
-    box-shadow: 15px 15px 0 #000000;
+    border-radius: 20px 20px 70px 20px;
+    filter: sepia(.3) drop-shadow(15px 15px 0 black);
 }
 
 .innerborder{
@@ -167,6 +177,21 @@ h3{
     font-size: 2.5rem;
     letter-spacing: 3px;
     line-height: 1.6;
+    font-family: 'Press Start 2P';
+    animation: vt ease-in-out 2s infinite;
+}
+
+@keyframes vt{
+    0%{
+    
+    }
+    50%{
+        color: #fbf8ee;
+        letter-spacing: 5px;
+    }
+    100%{
+
+    }
 }
 
 .videosec a{
@@ -210,13 +235,6 @@ h4{
     margin-top: 20px;
 }
 
-#circle2{
-}
-
-
-.sq{
-}
-
 .sq ul{
     display: flex;
     justify-content: center;
@@ -234,4 +252,66 @@ h4{
     height: 10px;
     border-radius: 5px;
     background: #333;
+}
+
+/* shop */
+.mshop{
+    margin-bottom: 40px;
+}
+.mshop img{
+    margin-top: 20px;
+    border: 1rem solid black;
+}
+#dg{
+    border: 0;
+    margin: 0 auto;
+    margin-top: 30px;
+    filter: sepia(.8);
+    /* box-shadow: 5px 5px 0 black; */
+}
+
+/* footer */
+
+footer{
+    background: #E1C564;
+}
+
+
+footer ul{
+}
+
+footer li{
+    margin: 0 auto;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+footer li a{
+    color: black;
+}
+
+footer li a i{
+    border: 0;
+    font-size: 1.2rem;
+}
+
+footer p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+#cp{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.8;
+    font-family: 'Press Start 2P';
+}
+
+#cp2{
+    padding-bottom: 10px;
 }
