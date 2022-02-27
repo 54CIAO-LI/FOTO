@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="short icon" href="./img/d.png">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>FOTO</title>
+    <style>
+        /* SHOP ITEM */
+        .nav-icon {
+            margin-top: 40px;
+        }
+
+        .nav-icon ul {
+            display: flex;
+        }
+
+        .nav-icon li a {
+            line-height: 1.6;
+            font-size: 1rem;
+            text-decoration: none;
+            text-align: center;
+            padding-right: 5px;
+            padding-left: 5px;
+            letter-spacing: 1px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .nav-item li {
+            list-style: none;
+        }
+
+        .nav-item #i1 a {
+            color: #E1C564;
+        }
+
+        .nav-item #i2 a {
+            color: #E1C564;
+        }
+
+        .nav-item #i3 a {
+            color: #E1C564;
+        }
+
+        .nav-icon li {
+            list-style: none;
+        }
+
+        .nav-icon i {
+            color: black;
+            font-weight: 600;
+            font-size: .8rem;
+            margin: 0 10px;
+            border: none;
+        }
+
+        .nav-item {
+            margin: 20px auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .nav-item ul {
+            display: flex;
+
+        }
+
+        .nav-item li {
+            flex-grow: 1;
+        }
+
+        .nav-item li a {
+            font-size: .8rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-item li a:hover {
+            color: #E1C564;
+            letter-spacing: 3px;
+            transition: .5s;
+        }
+
+        .item {
+            text-align: center;
+        }
+
+        .item img {
+            width: 50%;
+            border: 5px solid black;
+            box-shadow: 3px 3px 3px #dbdbdb;
+            transition: 1s;
+        }
+
+        .item img:hover {
+            transform: translatey(-5px);
+            box-shadow: 10px 10px #E1C564;
+        }
+
+        .itembtn {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .itembtn li {
+            display: inline-flex;
+        }
+
+        .itembtn a {
+            box-sizing: border-box;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: black;
+            margin: 50px 10px;
+        }
+
+        .price {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .price h3 {
+            color: white;
+            font-size: 0.5rem;
+            font-weight: 500;
+            background-color: black;
+            border: 0;
+            width: 120px;
+            height: 25px;
+            padding: 5px 0;
+            margin: 0 auto;
+            border-radius: 20px;
+            animation: none;
+        }
+
+        .counter {
+            width: 150px;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .counter span {
+            display: block;
+            font-size: 14px;
+            padding: 0 10px;
+            cursor: pointer;
+            color: black;
+            user-select: none;
+        }
+
+        .counter input {
+            width: 50px;
+            border: 0;
+            line-height: 30px;
+            height: 30px;
+            font-size: 14px;
+            text-align: center;
+            background: black;
+            color: #E1C564;
+        }
+
+        .addtocart {
+            display: flex;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .addtocart a {
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            transition: .5s;
+        }
+
+        .addtocart a>h2 {
+            font-size: .5rem;
+            text-align: center;
+            text-shadow: none;
+            background-color: #E1C564;
+            box-shadow: 1px 1px 1px #caa728;
+            width: 120px;
+            letter-spacing: 0;
+            line-height: 2;
+            margin: 0 auto;
+            margin-top: 20px;
+            transition: .3s ease;
+        }
+
+        #s1 {
+            background-color: #E1C564;
+        }
+
+        .sicon {
+            padding-top: 15px;
+        }
+
+
+        .filmbtn {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .filmbtn li {
+            display: inline-flex;
+        }
+
+        .filmbtn a {
+            box-sizing: border-box;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: black;
+            margin: 50px 10px;
+        }
+
+        .filmbtn a:hover {
+            background-color: #E1C564;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-section">
+            <div class="logo">
+                <a href="HOMEm.html"><img src="./img/LOGO.png" alt="" height="70px" id="l1"></a>
+                <img src="./img/d.png" alt="" height="60px" id="menu-btn" onclick="togglemenu()">
+            </div>
+
+            <!-- nav -->
+            <nav class="nav">
+                <ul id="menuList">
+                    <li><a href="HOME.html"><i class="fa-solid fa-camera-retro"></i></a></li>
+                    <li><a href="HOMEm.html">🏠&ensp;HOME</a></li>
+                    <li><a href="FOTOm.html">📷&ensp;FOTO</a></li>
+                    <li><a href="VIDEOm.html">🎥&ensp;VIDEO</a></li>
+                    <li><a href="SHOPm.html">🛒&ensp;SHOP</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- SHOP ITEM -->
+    <div class="nav-icon">
+        <ul>
+            <li><a href="LOGIN.html"><i class="fas fa-user"></i></a></li>
+            <li><a href="LOGIN.html">LOG IN</a></li>
+            <li><a href="LOGIN.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="LOGIN.html">CART</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-item">
+        <ul>
+            <li id="i1"><a href="SHOP.html">PHOTO ALBUM</a></li>
+            |
+            <li><a href="POSTCARD.html">POSTCARD</a></li>
+            |
+            <li><a href="BOOKMARK.html">BOOKMARK</a></li>
+        </ul>
+    </div>
+
+    <div class="sicon">
+        <!-- PRICE -->
+        <div class="price">
+            <h3>NT.168</h3>
+        </div>
+
+        <!-- item -->
+        <div class="item">
+            <div>
+                <img src="./img/shop/item1.png" alt="">
+                <div class="counter">
+                    <span class="down" onclick="decreaseCount(event, this)">-</span>
+                    <input type="text" value="1">
+                    <span class="up" onclick="increaseCount(event, this)">+</span>
+                </div>
+                <!-- ADD -->
+                <div class="addtocart">
+                    <a href="./LOGINm.html">
+                        <h2>ADD TO CART</h2>
+                    </a>
+                    <a href="./LOGINm.html">
+                        <h2>BUY NOW</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <ul class="filmbtn">
+                    <li><a href="SHOPm.html" id="s1"></a></li>
+                    <li><a href="POSTCARDm.html"></a></li>
+                    <li><a href="BOOKMARKm.html"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact decoration -->
+    <div class="deco">
+        <a href="HOMEm.html"><img src="./img/logo.gif" alt="" id="logo8"></a>
+    </div>
+
+    <div class="contactm">
+        <ul>
+            <li><img src="./img/d.gif" alt=""></li>
+            <li><a href="CONTACTm.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fa-solid fa-camera-retro"></i></a>
+            </li>
+        </ul>
+        <ul class="fnav">
+            <li><a href="HOMEm.html">HOME</a></li>
+            <li><a href="FOTOm.html">FOTO</a></li>
+            <li><a href="VIDEOm.html">VIDEO</a></li>
+            <li><a href="SHOPm.html">SHOP</a></li>
+            <li><a href="CONTACTm.html">CONTACT</a></li>
+        </ul>
+
+        <p id="cp2">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
+        <p id="cp">Copyright © 2022 CIAO-LI.</p>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "280px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <script>
+
+        function increaseCount(a, b) {
+            var input = b.previousElementSibling;
+            var value = parseInt(input.value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            input.value = value;
+        }
+
+        function decreaseCount(a, b) {
+            var input = b.nextElementSibling;
+            var value = parseInt(input.value, 10);
+            if (value > 1) {
+                value = isNaN(value) ? 0 : value;
+                value--;
+                input.value = value;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

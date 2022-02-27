@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" href="./img/d.png">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>FOTO</title>
+    <style>
+        /* login - page */
+        .login {
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./img/cloudb.png);
+            background-position: center;
+            background-size: cover;
+            /* position: absolute; */
+            filter: sepia(.3);
+            margin-top: 20px;
+        }
+
+        .form-box {
+            width: 340px;
+            height: 440px;
+            position: relative;
+            margin: 10px auto;
+
+            background: #fff;
+            padding: 10px;
+            overflow: hidden;
+            transition: 1s;
+        }
+
+
+        .button-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            border-radius: 30px;
+            display: flex;
+        }
+
+        .toggle-btn {
+            padding: 10px 29px;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+        }
+
+        #btbtn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100px;
+            height: 100%;
+            background: linear-gradient(to right, #E1C564, #caa728);
+            border-radius: 30px;
+            transition: .5s;
+        }
+
+        .social-icons {
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: 1s;
+        }
+
+        .social-icons img:hover {
+            transform: translate(-5px) scale(1.2);
+        }
+
+        .input-group {
+            top: 180px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+        }
+
+        .input-filed {
+            width: 90%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+
+        .submit-btn {
+            width: 55%;
+            padding: 10px 30px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            margin-left: 45px;
+            background: linear-gradient(to right, #E1C564, #caa728);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            transition: .5s;
+        }
+
+        .submit-btn:hover {
+            transform: scale(.9);
+            color: #fbf8ee;
+        }
+
+        .chech-box {
+            margin: 30px 10px 30px 0;
+        }
+
+        .chech-box span {
+            color: #777;
+            font-size: 10px;
+            bottom: 68px;
+            position: absolute;
+        }
+
+        #login1 {
+            left: 50px;
+        }
+
+        #REGISTER {
+            left: 450px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-section">
+            <div class="logo">
+                <a href="HOMEm.html"><img src="./img/LOGO.png" alt="" height="70px" id="l1"></a>
+                <img src="./img/d.png" alt="" height="60px" id="menu-btn" onclick="togglemenu()">
+            </div>
+
+            <!-- nav -->
+            <nav class="nav">
+                <ul id="menuList">
+                    <li><a href="HOME.html"><i class="fa-solid fa-camera-retro"></i></a></li>
+                    <li><a href="HOMEm.html">🏠&ensp;HOME</a></li>
+                    <li><a href="FOTOm.html">📷&ensp;FOTO</a></li>
+                    <li><a href="VIDEOm.html">🎥&ensp;VIDEO</a></li>
+                    <li><a href="SHOPm.html">🛒&ensp;SHOP</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="login">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btbtn"></div>
+                <button type="button" class="toggle-btn" onclick="LOGIN()">LOGIN</button>
+                <button type="button" class="toggle-btn" onclick="REGISTER()">REGISTER</button>
+            </div>
+            <div class="social-icons">
+                <img src="./img/facebook.png">
+                <img src="./img/google.png">
+                <img src="./img/twitter.png">
+            </div>
+            <form id="login1" class="input-group">
+                <input type="text" class="input-filed" placeholder="USER ID" required>
+                <input type="text" class="input-filed" placeholder="ENTER PASSWORD" required><br>
+                <input type="checkbox" class="chech-box"><span>REMEMBER PASSWORD</span>
+                <button type="submit" class="submit-btn">LOG IN</button>
+            </form>
+            <form id="REGISTER" class="input-group">
+                <input type="text" class="input-filed" placeholder="USER ID" required>
+                <input type="EMAIL" class="input-filed" placeholder="EMAIL ID" required><br>
+                <input type="checkbox" class="chech-box"><span>I AGREE TO THE TERMS</span>
+                <button type="submit" class="submit-btn">REGISTER</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- contact decoration -->
+    <div class="deco">
+        <a href="HOMEm.html"><img src="./img/logo.gif" alt="" id="logo8"></a>
+    </div>
+    
+    <div class="contactm">
+        <ul>
+            <li><img src="./img/d.gif" alt=""></li>
+            <li><a href="CONTACTm.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fa-solid fa-camera-retro"></i></a>
+            </li>
+        </ul>
+        <ul class="fnav">
+            <li><a href="HOMEm.html">HOME</a></li>
+            <li><a href="FOTOm.html">FOTO</a></li>
+            <li><a href="VIDEOm.html">VIDEO</a></li>
+            <li><a href="SHOPm.html">SHOP</a></li>
+            <li><a href="CONTACTm.html">CONTACT</a></li>
+        </ul>
+       
+        <p id="cp2">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
+        <p id="cp">Copyright © 2022 CIAO-LI.</p>
+    </footer>
+
+    <script>
+        var x = document.getElementById("login1");
+        var y = document.getElementById("REGISTER");
+        var z = document.getElementById("btbtn");
+
+        function REGISTER() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function LOGIN() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+    </script>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "280px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
