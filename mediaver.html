@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="short icon" href="./img/d.png">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/all.css">
@@ -45,15 +46,15 @@
     <section>
         <a href=""><h2>FOTO</h2></a>
         <div class="fototp">
-            <div class="bw">
+            <div class="bw" data-aos="flip-left">
                 <a href=""><h5 class="linear-wipe">BLACK<br>AND<br>WHITE ▶</h5></a>
                 <a href=""><img src="./img/B&W/BW4.JPG" alt=""></a>
             </div>
-            <div class="color">
+            <div class="color" data-aos="flip-right">
                 <a href=""><h5 class="linear-wipe">COLOR ▶</h5></a>
                 <a href=""><img src="./img/COLOR/color4.JPG" alt=""></a>
             </div>
-            <div class="film">
+            <div class="film" data-aos="flip-left">
                 <a href=""><h5 class="linear-wipe">FILM ▶</h5></a>
                 <a href=""><img src="./img/FILM/F2-5.jpg" alt=""></a>
             </div>
@@ -117,10 +118,16 @@
                 <a href=""><i class="fa-solid fa-camera-retro"></i></a>
             </li>
         </ul>
-
-        <p id="cp">Copyright © 2022 CIAO-LI.</p>
+        <ul class="fnav">
+            <li><a href="HOME.html">HOME</a></li>
+            <li><a href="FOTO.html">FOTO</a></li>
+            <li><a href="VIDEO.html">VIDEO</a></li>
+            <li><a href="SHOP.html">SHOP</a></li>
+            <li><a href="CONTACT.html">CONTACT</a></li>
+        </ul>
+       
         <p id="cp2">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
-
+        <p id="cp">Copyright © 2022 CIAO-LI.</p>
     </footer>
 
     <script>
@@ -137,6 +144,10 @@
             }
         }
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
