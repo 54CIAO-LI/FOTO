@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="short icon" href="./img/d.png">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>FOTO</title>
+    <style>
+        .contact-section {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./img/cloudb.png);
+            background-size: cover;
+            padding: 40px 0;
+            margin-top: 20px;
+            filter: sepia(.5);
+        }
+
+
+        .contact-section h1 {
+            font-family: 'Press Start 2P';
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1.8;
+            text-align: center;
+            color: white;
+        }
+
+        .border {
+            width: 150px;
+            height: 10px;
+            background: #E1C564;
+            margin: 10px auto;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 0 10px;
+            overflow: hidden;
+        }
+
+        .contact-form-text {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 20px 0;
+            border: 0;
+            background: black;
+            padding: 20px 40px;
+            outline: none;
+            color: #E1C564;
+            transition: 0.5s;
+        }
+
+        .contact-form-text:hover {
+            box-shadow: 0 0 4px 4px #E1C564;
+        }
+
+        textarea.contact-form-text {
+            resize: none;
+            height: 120px;
+        }
+
+        .contact-form-btn {
+            font-weight: 700;
+            font-size: .5rem;
+            letter-spacing: 2px;
+            float: right;
+            border: 0;
+            background: #E1C564;
+            padding: 12px 30px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        .contact-form-btn:hover {
+            color: white;
+            background-color: #caa728;
+        }
+
+        .linear-wipe {
+            background: linear-gradient(to right, #FFF 20%, #E1C564 40%, #E1C564 60%, #FFF 80%);
+            background-size: 200% auto;
+
+            color: #000;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: shine 2.5s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+
+            50% {
+                letter-spacing: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-section">
+            <div class="logo">
+                <a href="HOMEm.html"><img src="./img/LOGO.png" alt="" height="70px" id="l1"></a>
+                <img src="./img/d.png" alt="" height="60px" id="menu-btn" onclick="togglemenu()">
+            </div>
+
+            <!-- nav -->
+            <nav class="nav">
+                <ul id="menuList">
+                    <li><a href="HOME.html"><i class="fa-solid fa-camera-retro"></i></a></li>
+                    <li><a href="HOMEm.html">🏠&ensp;HOME</a></li>
+                    <li><a href="FOTOm.html">📷&ensp;FOTO</a></li>
+                    <li><a href="VIDEOm.html">🎥&ensp;VIDEO</a></li>
+                    <li><a href="SHOPm.html">🛒&ensp;SHOP</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <div class="contact-section">
+        <h1 class="linear-wipe">CONTACT</h1>
+        <div class="border"></div>
+        <form class="contact-form" action="CONTACT.html" method="post">
+            <input type="text" class="contact-form-text" placeholder="YOUR NAME">
+            <input type="text" class="contact-form-text" placeholder="YOUR EMAIL">
+            <input type="text" class="contact-form-text" placeholder="YOUR PHONE">
+            <textarea class="contact-form-text" placeholder="YOUR MESSAGE"></textarea>
+            <input type="submit" class="contact-form-btn" value="Send">
+        </form>
+    </div>
+
+
+
+    <!-- contact decoration -->
+    <div class="deco">
+        <a href="HOMEm.html"><img src="./img/logo.gif" alt="" id="logo8"></a>
+    </div>
+
+    <!-- <div class="contactm">
+        <ul>
+            <li><img src="./img/d.gif" alt=""></li>
+            <li><a href="CONTACTm.html">CONTACT</a></li>
+        </ul>
+    </div> -->
+
+    <footer>
+        <ul>
+            <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fa-solid fa-camera-retro"></i></a>
+            </li>
+        </ul>
+        <ul class="fnav">
+            <li><a href="HOMEm.html">HOME</a></li>
+            <li><a href="FOTOm.html">FOTO</a></li>
+            <li><a href="VIDEOm.html">VIDEO</a></li>
+            <li><a href="SHOPm.html">SHOP</a></li>
+            <li><a href="CONTACTm.html">CONTACT</a></li>
+        </ul>
+
+        <p id="cp2">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
+        <p id="cp">Copyright © 2022 CIAO-LI.</p>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "280px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
