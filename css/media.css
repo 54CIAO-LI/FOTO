@@ -182,7 +182,7 @@ h2{
 #cloud{
     margin-top: 50px;
     width: 20%;
-    filter: sepia(.8);
+    filter: sepia(.5);
 }
 
 /* 影片區塊 */
@@ -382,9 +382,9 @@ h4{
 @keyframes cona{
     50%{
         box-shadow: 10px 10px 0 #fbf8ee;
+        filter: sepia(.5);
         color: #E1C564;
     }
-
 }
 
 /* footer */

@@ -290,15 +290,17 @@ footer p{
 }
 
 /* bw page img */
-.gallery{
-    background: black;
-}
+
 .gallery img{
     height: 200px;
-    margin: 0 0 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: 1s;
 }
-.gallery #g1{
-    margin-top:30px;
+.gallery img:hover{
+    transform: scale(1.1);
+    filter: sepia(.3);
 }
 
 .page{
@@ -362,5 +364,6 @@ footer p{
         box-shadow: 10px 10px 0 #fbf8ee;
         color: #E1C564;
     }
-
 }
+
+/* color page */
