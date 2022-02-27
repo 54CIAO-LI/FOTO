@@ -275,7 +275,7 @@ h3{
     line-height: 1.6;
 }
 
-h4{
+.fbtn h4{
     font-size: 6rem;
     font-weight: 900;
     line-height: 1.2;
@@ -291,14 +291,14 @@ h4{
     list-style: none;
 }
 
-.fbtn #circle1, #circle2{
+.fbtn #circle1, .fbtn #circle2{
     width: 30px;
     height: 30px;
     border-radius: 30px;
     background: #333;
 }
 
-#circle1{   
+.fbtn #circle1{   
     margin-right: 10px;
     margin-top: 20px;
 }
@@ -315,7 +315,7 @@ h4{
     margin-right: 10px;
 }
 
-#sq1, #sq2{
+.sq #sq1, #sq2{
     width: 30px;
     height: 10px;
     border-radius: 5px;
@@ -438,10 +438,6 @@ footer p{
     padding-bottom: 10px;
 }
 
-#cp2{
-    
-}
-
 .fnav{
     width: 80%;
     display: flex;
@@ -461,4 +457,127 @@ footer p{
 .fnav li a:hover{
     transform: translateY(-5px);
     color: black;
+}
+/* vdieo page */
+#vti{
+    font-size: 1.2rem;
+    line-height: 3;
+}
+
+/* video page section2 */
+
+.border2{
+    margin: 0 auto;
+    /* border: 10px solid black; */
+    background: #111;
+    border-radius: 20px 20px 70px 20px;
+    filter: sepia(.3) drop-shadow(15px 15px 0 #E1c564);
+}
+
+.innerborder2{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.innerborder2 video{
+    margin-top: 10%;
+    width: 85%;
+    border: 8px solid #E1C564;
+    border-radius: 10px;
+}
+.videosec img{
+    margin-top: 10px;
+    background: #fbf8ee;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+h3{
+    margin: 0 auto;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 1.6;
+    font-family: 'Press Start 2P';
+    animation: vt ease-in-out 2s infinite;
+}
+
+@keyframes vt{
+    0%{
+    
+    }
+    50%{
+        color: #fbf8ee;
+        letter-spacing: 5px;
+    }
+    100%{
+
+    }
+}
+
+.videosec a{
+    text-decoration: none;
+    color: #E1C564;
+}
+
+.fbtn2{
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    line-height: 1.6;
+}
+
+.fbtn2 h4{
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #E1C564;
+}
+
+.fbtn2 ul{
+    display: flex;
+    margin-top: 30px;
+}
+
+.fbtn2 li{
+    list-style: none;
+}
+
+.fbtn2 #circle1, .fbtn2 #circle2{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: #E1C564;
+}
+
+.fbtn2 #circle1{   
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.sq2 ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.sq2 ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+
+.sq2 #sq1, #sq2{
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+    background: #E1C564;
+}
+
+#cactus, #penguin, #cloud2{
+    height: 50px;
+    margin: 0 45%;
+    margin-top: 50px;
+    filter: sepia(.5);
 }
