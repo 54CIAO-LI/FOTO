@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="short icon" href="./img/d.png">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/FOTOm.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>FOTO</title>
+    <style>
+         html,
+        body {
+            position: relative;
+        }
+
+        body {
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            /* font-size: 18px; */
+            /* background: #E1C564; */
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            margin-top: 20px;
+            display: block;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .swiper-pagination {
+            margin-bottom: 20px;
+        }
+
+        .swiper-pagination span {
+            background-color: #E1C564;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-section">
+            <div class="logo">
+                <a href="HOME.html"><img src="./img/LOGO.png" alt="" height="70px" id="l1"></a>
+                <img src="./img/d.png" alt="" height="60px" id="menu-btn" onclick="togglemenu()">
+            </div>
+
+            <!-- nav -->
+            <nav class="nav">
+                <ul id="menuList">
+                    <li><a href=""><i class="fa-solid fa-camera-retro"></i></a></li>
+                    <li><a href="HOME.html">🏠&ensp;HOME</a></li>
+                    <li><a href="FOTO.html">📷&ensp;FOTO</a></li>
+                    <li><a href="VIDEO.html">🎥&ensp;VIDEO</a></li>
+                    <li><a href="SHOP.html">🛒&ensp;SHOP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 上方圖片區塊 -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/B&W/BW1.JPG" alt="B1"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW2.JPG" alt="B2"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW3.JPG" alt="B3"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW4.JPG" alt="B4"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW5.JPG" alt="B5"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW6.JPG" alt="B6"></div>
+            <div class="swiper-slide"><img src="./img/B&W/BW7.JPG" alt="B7"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="fotoli">
+        <ul>
+            <li><a href="FOTO.html">
+                    <h3>FOTO&ensp;|</h3>
+                </a></li>
+            <li><a href="BW1.html">
+                    <h3 id="ft">&ensp;BLACK AND WHITE</h3>
+                </a></li>
+        </ul>
+    </section>
+
+    <section class="gallery">
+            <img src="./img/B&W/Bw1/BW1.png" alt="" id="g1"> 
+            <img src="./img/B&W/Bw1/BW2.png" alt="">
+            <img src="./img/B&W/Bw1/BW3.png" alt="">
+            <img src="./img/B&W/Bw1/BW4.jpg" alt="">
+            <img src="./img/B&W/Bw1/BW5.jpg" alt="">
+            <img src="./img/B&W/Bw1/BW6.jpg" alt="">
+            <img src="./img/B&W/Bw1/BW7.png" alt="">
+            <img src="./img/B&W/Bw1/BW8.jpg" alt="">
+            <img src="./img/B&W/Bw1/BW9.png" alt="">
+    </section>
+
+    <div class="page">
+        <!-- <a href="">«</a> -->
+        <a href="BW1.html" id="pagec">1</a>
+        <a href="BW2.html">2</a>
+        <a href="BW3.html">3</a>
+        <a href="BW4.html">4</a>
+        <a href="BW5.html">5</a>
+        <a href="BW6.html">6</a>
+        <a href="BW7.html">7</a>
+        <a href="BW2.html">»</a>
+    </div>
+
+    <div class="deco">
+        <a href=""><img src="./img/logo.gif" alt="" id="logo8"></a>
+    </div>
+    
+    <div class="contactm">
+        <ul>
+            <li><img src="./img/d.gif" alt=""></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fa-solid fa-camera-retro"></i></a>
+            </li>
+        </ul>
+        <ul class="fnav">
+            <li><a href="HOME.html">HOME</a></li>
+            <li><a href="FOTO.html">FOTO</a></li>
+            <li><a href="VIDEO.html">VIDEO</a></li>
+            <li><a href="SHOP.html">SHOP</a></li>
+            <li><a href="CONTACT.html">CONTACT</a></li>
+        </ul>
+
+        <p id="cp2">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
+        <p id="cp">Copyright © 2022 CIAO-LI.</p>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "280px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

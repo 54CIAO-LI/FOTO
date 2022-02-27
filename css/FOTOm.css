@@ -113,15 +113,21 @@ section{
     }
 }
 
-
 h2{
     text-align: center;
-    font-size: 2.5rem;
-    letter-spacing: .5rem;
-    color: #E1C564;
+    font-size: 3.5rem;
+    margin-top: 10%;
+    line-height: 1.5;
+    color: black;
+    text-shadow: .3rem .3rem #E1C564;
 }
 
+
 /* 圖片區塊 */
+.fotos{
+    margin-bottom: 50px;
+}
+
 .bw, .color, .film{
     position: relative;
     filter: sepia(.5);
@@ -185,157 +191,129 @@ h2{
     filter: sepia(.8);
 }
 
-/* 影片區塊 */
-.videosec{
+/* footer */
+
+footer{
+    background: #E1C564;
+}
+
+
+footer li{
+    margin: 0 auto;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+footer li a{
+    color: black;
+}
+
+footer li a i{
+    border: 0;
+    font-size: 1.2rem;
+    transition: .5s;
+    margin-top: 15px;
+}
+
+footer li a i:hover{
+    text-shadow: none;
+    transform: translateY(-5px);
+    color: #fbf8ee;
+}
+
+footer p{
     width: 80%;
     margin: 0 auto;
-    transition: 1s;
-    animation: bv linear 3s;
-}
-
-@keyframes bv{
-    0%{
-       opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-}
-h2{
     text-align: center;
-    font-size: 3.5rem;
-    margin-top: 10%;
-    line-height: 1.5;
-    color: black;
-    text-shadow: .3rem .3rem #E1C564;
-}
-
-.border{
-    margin: 0 auto;
-    /* border: 10px solid black; */
-    background: #E1C564;
-    border-radius: 20px 20px 70px 20px;
-    filter: sepia(.3) drop-shadow(15px 15px 0 black);
-}
-
-.innerborder{
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 10%;
-}
-
-.innerborder video{
-    margin-top: 10%;
-    width: 85%;
-    border: 8px solid black;
-    border-radius: 10px;
-}
-.videosec img{
-    margin-top: 10px;
-    background: #fbf8ee;
-    border-radius: 10px;
-    padding: 0 20px;
-}
-
-h3{
-    margin: 0 auto;
-    font-size: 2.5rem;
-    letter-spacing: 3px;
+    font-size: 10px;
     line-height: 1.6;
+}
+
+#cp{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 2.5;
     font-family: 'Press Start 2P';
-    animation: vt ease-in-out 2s infinite;
+    padding-bottom: 10px;
 }
 
-@keyframes vt{
-    0%{
-    
-    }
-    50%{
-        color: #fbf8ee;
-        letter-spacing: 5px;
-    }
-    100%{
-
-    }
+.fnav{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
 }
 
-.videosec a{
-    text-decoration: none;
+.fnav li a{
+    line-height: 3;
+    font-family: 'Press Start 2P';
+    font-size: 10px;
+    font-weight: normal;
+    transition: .5s;
+    margin-right: 10px;
+    color: #fbf8ee;
+}
+
+.fnav li a:hover{
+    transform: translateY(-5px);
     color: black;
 }
 
-.fbtn{
-    width: 75%;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    line-height: 1.6;
+#logo8{
+    margin-top: 50px;
+    width: 30%;
+    filter: sepia(.8);
 }
 
-h4{
-    font-size: 6rem;
-    font-weight: 900;
-    line-height: 1.2;
-    color: #333;
-}
-
-.fbtn ul{
-    display: flex;
-    margin-top: 30px;
-}
-
-.fbtn li{
-    list-style: none;
-}
-
-.fbtn #circle1, #circle2{
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    background: #333;
-}
-
-#circle1{   
-    margin-right: 10px;
-    margin-top: 20px;
-}
-
-.sq ul{
+/* bw page */
+.fotoli ul{
     display: flex;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
 }
 
-.sq ul li{
+.fotoli li{
     list-style: none;
-    margin-right: 10px;
 }
 
-#sq1, #sq2{
-    width: 30px;
-    height: 10px;
-    border-radius: 5px;
-    background: #333;
+.fotoli h3{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 5;
+    animation: none;
+    font-family: 'Open sans';
+    color: black;
 }
 
-/* shop */
-.mshop{
-    margin-bottom: 40px;
-}
-.mshop img{
-    margin-top: 20px;
-    border: 1rem solid black;
-}
-#dg{
-    border: 0;
-    margin: 0 auto;
-    margin-top: 30px;
-    filter: sepia(.8);
-    /* box-shadow: 5px 5px 0 black; */
+#ft{
+    color: #E1C564;
 }
 
-/* decoration */
+/* bw page img */
+.gallery{
+    background: black;
+}
+.gallery img{
+    height: 200px;
+    margin: 0 0 30px;
+}
+.gallery #g1{
+    margin-top:30px;
+}
+
+.page{
+    text-align: center;
+}
+.page a{
+    color:black;
+    font-size: 1rem;
+    line-height: 3;
+    margin-right: 6px;
+}
+#pagec{
+    color:#E1C564;
+}
+
 .deco{
     text-align: center;
     margin-bottom: 20px;
@@ -385,77 +363,4 @@ h4{
         color: #E1C564;
     }
 
-}
-
-/* footer */
-
-footer{
-    background: #E1C564;
-}
-
-
-footer li{
-    margin: 0 auto;
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    list-style: none;
-}
-
-footer li a{
-    color: black;
-}
-
-footer li a i{
-    border: 0;
-    font-size: 1.2rem;
-    transition: .5s;
-    margin-top: 15px;
-}
-
-footer li a i:hover{
-    text-shadow: none;
-    transform: translateY(-5px);
-    color: #fbf8ee;
-}
-
-footer p{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 10px;
-    line-height: 1.6;
-}
-
-#cp{
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 2.5;
-    font-family: 'Press Start 2P';
-    padding-bottom: 10px;
-}
-
-#cp2{
-    
-}
-
-.fnav{
-    width: 80%;
-    display: flex;
-    margin: 0 auto;
-}
-
-.fnav li a{
-    line-height: 3;
-    font-family: 'Press Start 2P';
-    font-size: 10px;
-    font-weight: normal;
-    transition: .5s;
-    margin-right: 10px;
-    color: #fbf8ee;
-}
-
-.fnav li a:hover{
-    transform: translateY(-5px);
-    color: black;
 }
