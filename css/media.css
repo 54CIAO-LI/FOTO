@@ -136,7 +136,7 @@ h2{
 }
 
 .bw h5, .color h5, .film h5{
-    font-size: .5rem;
+    font-size: 1rem;
     font-family: 'Press Start 2P';
     font-weight: 400;
     letter-spacing: 3px;
@@ -146,7 +146,7 @@ h2{
     position: absolute;
     left: 0;
     right: 0;
-    top: 90px;
+    top: 80px;
     bottom: 0;
     margin: auto;
 }
@@ -157,7 +157,7 @@ h2{
 
 .bw h5{
     top: 80px;
-    line-height: 2.5;
+    line-height: 2;
 }
 
 .linear-wipe{
