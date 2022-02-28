@@ -61,10 +61,10 @@ nav ul li a{
     transition: .5s;
 }
 
-nav ul li a:hover{
+/* nav ul li a:hover{
     color:#fbf8ee;
     letter-spacing: 4px;
-}
+} */
 
 ul li a i{
     margin-top: 10px;
