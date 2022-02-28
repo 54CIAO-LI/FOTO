@@ -585,8 +585,9 @@ h3{
 }
 
 #cactus, #penguin, #cloud2{
-    height: 50px;
+    height: 60px;
     margin: 0 45%;
     margin-top: 50px;
-    filter: sepia(.5);
+    filter: sepia(.8);
+    border-radius: 50%;
 }
