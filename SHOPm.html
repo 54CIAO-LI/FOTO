@@ -276,6 +276,44 @@
         .swiper-pagination span {
             background-color: #E1C564;
         }
+
+        section .shopbanner {
+            filter: sepia(.5);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/cloudb.png);
+            background-size: cover;
+        }
+
+        section .shopbanner h2 {
+            font-family: 'press start 2p';
+            margin: 0;
+            margin-top: 20px;
+            font-size: 3.5rem;
+            line-height: 4.5;
+            letter-spacing: 10px;
+        }
+
+        .linear-wipe {
+            background: linear-gradient(to right, #fbf8ee 20%, #caa728 40%, #fbf8ee 60%, #caa728 80%);
+            background-size: 200% auto;
+
+            color: #E1C564;
+            background-clip: text;
+            /* text-fill-color: transparent; */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: shine 2.5s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+
+            50% {
+                letter-spacing: 6px;
+            }
+        }
     </style>
 </head>
 
@@ -301,6 +339,13 @@
 
         </div>
     </header>
+
+    <!-- SHOP BANNER -->
+    <section>
+        <div class="shopbanner">
+            <h2 class="linear-wipe">SHOP!</h2>
+        </div>
+    </section>
 
     <!-- SHOP ITEM -->
     <div class="nav-icon">
