@@ -82,6 +82,31 @@
             background-color: #caa728;
         }
 
+        .contact-form a{
+            color:black;
+            float: right;
+            font-size: .5rem;
+            font-weight: 400;
+            width: 100px;
+            height: 30px;
+            padding: 10px;
+            border-radius: 30px;
+            text-align: center;
+            background: #E1C564;
+            font-family: 'Press Start 2P';
+            margin-top: 10px;
+            animation: sbtn linear 2s infinite;
+        }
+
+        @keyframes sbtn{
+            50%{
+                color: #fbf8ee;
+                letter-spacing: 1px;
+                transform: translateY(-5px);
+                box-shadow: 5px 5px 0 black;
+            }
+        }
+
         .linear-wipe {
             background: linear-gradient(to right, #FFF 20%, #E1C564 40%, #E1C564 60%, #FFF 80%);
             background-size: 200% auto;
@@ -139,7 +164,8 @@
             <input type="text" class="contact-form-text" placeholder="YOUR EMAIL">
             <input type="text" class="contact-form-text" placeholder="YOUR PHONE">
             <textarea class="contact-form-text" placeholder="YOUR MESSAGE"></textarea>
-            <input type="submit" class="contact-form-btn" value="Send">
+            <!-- <input type="submit" class="contact-form-btn" value="SEND"> -->
+            <a href="">SEND</a>
         </form>
     </div>
 

@@ -315,7 +315,7 @@ h3{
     margin-right: 10px;
 }
 
-.sq #sq1, #sq2{
+.sq #sq1, .sq #sq2{
     width: 30px;
     height: 10px;
     border-radius: 5px;
@@ -575,7 +575,7 @@ h3{
     margin-right: 10px;
 }
 
-.sq2 #sq1, #sq2{
+.sq2 #sq1, .sq2 #sq2{
     width: 30px;
     height: 10px;
     border-radius: 5px;
