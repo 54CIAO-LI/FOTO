@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="short icon" href="./img/d.png">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>FOTO</title>
+    <style>
+        /* SHOP ITEM */
+        .nav-icon {
+            margin-top: 15px;
+        }
+
+        .nav-icon ul {
+            display: flex;
+        }
+
+        .nav-icon li a {
+            line-height: 1.6;
+            font-size: 1rem;
+            text-decoration: none;
+            text-align: center;
+            padding-right: 5px;
+            padding-left: 5px;
+            letter-spacing: 1px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .nav-item li {
+            list-style: none;
+        }
+
+        .nav-item #i1 a {
+            color: #E1C564;
+        }
+
+        .nav-item #i2 a {
+            color: #E1C564;
+        }
+
+        .nav-item #i3 a {
+            color: #E1C564;
+        }
+
+        .nav-icon li {
+            list-style: none;
+        }
+
+        .nav-icon i {
+            color: black;
+            font-weight: 600;
+            font-size: .8rem;
+            margin: 0 5px;
+            border: none;
+        }
+
+        .nav-item {
+            margin: 20px auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .nav-item ul {
+            display: flex;
+
+        }
+
+        .nav-item li {
+            flex-grow: 1;
+        }
+
+        .nav-item li a {
+            font-size: .8rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-item li a:hover {
+            color: #E1C564;
+            letter-spacing: 3px;
+            transition: .5s;
+        }
+
+        .item {
+            text-align: center;
+        }
+
+        .item img {
+            width: 80%;
+            border: 10px solid black;
+            box-shadow: 3px 3px 3px #dbdbdb;
+        }
+
+        .itembtn {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .itembtn li {
+            display: inline-flex;
+        }
+
+        .itembtn a {
+            box-sizing: border-box;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: black;
+            margin: 50px 10px;
+        }
+
+        .price {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .price h3 {
+            color: white;
+            font-size: 0.5rem;
+            font-weight: 500;
+            background-color: black;
+            border: 0;
+            width: 120px;
+            height: 25px;
+            padding: 5px 0;
+            margin: 0 auto;
+            border-radius: 20px;
+            animation: none;
+        }
+
+        .counter {
+            width: 150px;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .counter span {
+            display: block;
+            font-size: 14px;
+            padding: 0 10px;
+            cursor: pointer;
+            color: black;
+            user-select: none;
+        }
+
+        .counter input {
+            width: 50px;
+            border: 0;
+            line-height: 30px;
+            height: 30px;
+            font-size: 14px;
+            text-align: center;
+            background: black;
+            color: #E1C564;
+        }
+
+        .addtocart {
+            display: flex;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .addtocart a {
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            transition: .5s;
+        }
+
+        .addtocart a>h2 {
+            font-size: .5rem;
+            text-align: center;
+            text-shadow: none;
+            background-color: #E1C564;
+            box-shadow: 1px 1px 1px #caa728;
+            width: 100px;
+            letter-spacing: 0;
+            line-height: 2;
+            margin: 0 auto;
+            margin-top: 10px;
+            transition: .5s ease;
+        }
+
+        #s1 {
+            background-color: #E1C564;
+        }
+
+        .sicon {
+            padding-top: 15px;
+        }
+
+
+        .filmbtn {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .filmbtn li {
+            display: inline-flex;
+        }
+
+        .filmbtn a {
+            box-sizing: border-box;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: black;
+            margin: 50px 10px;
+        }
+
+        .filmbtn a:hover {
+            background-color: #E1C564;
+        }
+
+        html,
+        body {
+            position: relative;
+        }
+
+        body {
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            margin-top: 20px;
+            display: block;
+            /* height: 350px; */
+            object-fit: cover;
+        }
+
+        .swiper-pagination {
+            margin-bottom: 20px;
+        }
+
+        .swiper-pagination span {
+            background-color: #E1C564;
+        }
+
+        section .shopbanner {
+            filter: sepia(.4);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/stoneb.png);
+            background-size: cover;
+        }
+
+        section .shopbanner h2 {
+            font-family: 'press start 2p';
+            margin: 0;
+            margin-top: 20px;
+            font-size: 3.5rem;
+            line-height: 4.5;
+            letter-spacing: 10px;
+        }
+
+        .linear-wipe {
+            background: linear-gradient(to right, #fbf8ee 20%, #caa728 40%, #fbf8ee 60%, #caa728 80%);
+            background-size: 200% auto;
+
+            color: #E1C564;
+            background-clip: text;
+            /* text-fill-color: transparent; */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: shine 2.5s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+
+            50% {
+                letter-spacing: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-section">
+            <div class="logo">
+                <a href="HOMEm.html"><img src="./img/LOGO.png" alt="" height="70px" id="l1"></a>
+                <img src="./img/d.png" alt="" height="60px" id="menu-btn" onclick="togglemenu()">
+            </div>
+
+            <!-- nav -->
+            <nav class="nav">
+                <ul id="menuList">
+                    <li><a href="HOME.html"><i class="fa-solid fa-camera-retro"></i></a></li>
+                    <li><a href="HOMEm.html">🏠&ensp;HOME</a></li>
+                    <li><a href="FOTOm.html">📷&ensp;FOTO</a></li>
+                    <li><a href="VIDEOm.html">🎥&ensp;VIDEO</a></li>
+                    <li><a href="SHOPm.html">🛒&ensp;SHOP</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- SHOP BANNER -->
+    <section>
+        <div class="shopbanner">
+            <h2 class="linear-wipe">SHOP!</h2>
+        </div>
+    </section>
+
+    <!-- SHOP ITEM -->
+    <div class="nav-icon">
+        <ul>
+            <li><a href="LOGINm.html"><i class="fas fa-user"></i></a></li>
+            <li><a href="LOGINm.html">LOG IN</a></li>
+            <li><a href="LOGINm.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="LOGINm.html">CART</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-item">
+        <ul>
+            <li><a href="SHOPm.html">PHOTO ALBUM</a></li>
+            |
+            <li id="i1"><a href="POSTCARDm.html">POSTCARD</a></li>
+            |
+            <li><a href="BOOKMARKm.html">BOOKMARK</a></li>
+        </ul>
+    </div>
+
+    <div class="sicon">
+        <!-- PRICE -->
+        <div class="price">
+            <h3>NT.18</h3>
+        </div>
+
+        <!-- item -->
+        <div class="item">
+            <div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/shop/item2.png" alt="B2"></div>
+                        <div class="swiper-slide"><img src="./img/shop/item3.png" alt="B3"></div>
+                        <div class="swiper-slide"><img src="./img/shop/item1.png" alt="B1"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="counter">
+                    <span class="down" onclick="decreaseCount(event, this)">-</span>
+                    <input type="text" value="1">
+                    <span class="up" onclick="increaseCount(event, this)">+</span>
+                </div>
+                <!-- ADD -->
+                <div class="addtocart">
+                    <a href="./LOGINm.html">
+                        <h2>ADD TO CART</h2>
+                    </a>
+                    <a href="./LOGINm.html">
+                        <h2>BUY NOW</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <ul class="filmbtn">
+                    <li><a href="SHOPm.html"></a></li>
+                    <li><a href="POSTCARDm.html" id="s1"></a></li>
+                    <li><a href="BOOKMARKm.html"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact decoration -->
+    <div class="deco">
+        <a href="HOMEm.html"><img src="./img/logo.gif" alt="" id="logo8"></a>
+    </div>
+
+    <div class="contactm">
+        <ul>
+            <li><img src="./img/d.gif" alt=""></li>
+            <li><a href="CONTACTm.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fa-solid fa-camera-retro"></i></a>
+            </li>
+        </ul>
+        <ul class="fnav">
+            <li><a href="HOMEm.html">HOME</a></li>
+            <li><a href="FOTOm.html">FOTO</a></li>
+            <li><a href="VIDEOm.html">VIDEO</a></li>
+            <li><a href="SHOPm.html">SHOP</a></li>
+            <li><a href="CONTACTm.html">CONTACT</a></li>
+        </ul>
+
+        <p id="cp2">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，<br>本平台僅供學習、展示之用。</p>
+        <p id="cp">Copyright © 2022 CIAO-LI.</p>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "280px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <script>
+
+        function increaseCount(a, b) {
+            var input = b.previousElementSibling;
+            var value = parseInt(input.value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            input.value = value;
+        }
+
+        function decreaseCount(a, b) {
+            var input = b.nextElementSibling;
+            var value = parseInt(input.value, 10);
+            if (value > 1) {
+                value = isNaN(value) ? 0 : value;
+                value--;
+                input.value = value;
+            }
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

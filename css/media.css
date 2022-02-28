@@ -247,18 +247,13 @@ h3{
     line-height: 1.6;
     font-family: 'Press Start 2P';
     animation: vt ease-in-out 2s infinite;
+    color: black;
 }
 
 @keyframes vt{
-    0%{
-    
-    }
     50%{
         color: #fbf8ee;
         letter-spacing: 5px;
-    }
-    100%{
-
     }
 }
 
@@ -328,7 +323,7 @@ h3{
 }
 .mshop img{
     margin-top: 20px;
-    border: 1rem solid black;
+    border: .8rem solid black;
 }
 #dg{
     border: 0;
