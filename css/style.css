@@ -1053,7 +1053,7 @@ a{
 .login{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/d.gif);
+    background-image: linear-gradient(rgba(225,197,100,1.00),rgba(0,0,0,0.8)),url(../img/d.gif);
     background-position: center;
     /* background-size: cover; */
     position: absolute;
@@ -1074,7 +1074,7 @@ a{
 .form-box:hover{
     transform: translateY(-5PX);
     filter: sepia(.5);
-    box-shadow: 10px 10px #E1C564;
+    box-shadow: 10px 10px #caa728;
 }
 
 .button-box{
