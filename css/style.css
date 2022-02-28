@@ -1053,10 +1053,11 @@ a{
 .login{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/loginbac.JPG);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/d.gif);
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
     position: absolute;
+    filter: sepia(.5);
 }
 
 .form-box{
@@ -1067,7 +1068,6 @@ a{
     background: #fff;
     padding: 5px;
     overflow: hidden;
-    box-shadow: 5px 5px black;
     transition: 1s;
 }
 
@@ -1183,28 +1183,31 @@ a{
 .contact-section{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/cloudb.png);
-    background-size: cover;
+    background-image: linear-gradient(rgba(225,197,100,1.00),rgba(0,0,0,0.5)),url(../img/c.gif);
+    /* background-size: cover; */
     padding: 40px 0;
-    filter: sepia(.4);
+    filter: sepia(.5);
 }
 
 
 .contact-section h1{
     font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 2px;
-    line-height: 1.6;
+    font-family: 'press start 2p';
+    letter-spacing: 5px;
+    line-height: 3;
     text-align: center;
-    color: white;
+    color: black;
+    text-shadow: 3px 3px 0 black;
 }
-
+/* 
 .border{
-    width: 150px;
+    width: 350px;
     height: 10px;
-    background: #E1C564;
+    background: black;
+    border-radius: 10px;
     margin: 20px auto;
-}
+} */
 
 .contact-form{
     max-width: 600px;
