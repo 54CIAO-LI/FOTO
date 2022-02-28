@@ -9,6 +9,57 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="shortcut icon" href="img/d.png">
     <title>FOTO</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&family=Press+Start+2P&display=swap');
+
+        section {
+            margin: 0;
+        }
+
+        section .shopbanner {
+            filter: sepia(.5);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/stoneb.png);
+            background-size: cover;
+            height: 500px;
+            position: relative;
+        }
+
+        section .shopbanner h2 {
+            font-family: 'press start 2p';
+            font-size: 4rem;
+            letter-spacing: 10px;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 40%;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .linear-wipe {
+            background: linear-gradient(to right, #fbf8ee 20%, #caa728 40%, #fbf8ee 60%, #caa728 80%);
+            background-size: 200% auto;
+
+            color: #E1C564;
+            background-clip: text;
+            /* text-fill-color: transparent; */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: shine 2.5s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+
+            50% {
+                letter-spacing: 6px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -26,8 +77,16 @@
             </ul>
         </nav>
     </header>
+
     <!-- SHOP BANNER -->
-    <div class="shopban">
+    <section>
+        <div class="shopbanner">
+            <h2 class="linear-wipe">SHOP!</h2>
+        </div>
+    </section>
+
+    <!-- SHOP BANNER -->
+    <!-- <div class="shopban">
         <div class="bigtitle">
             <a href="POSTCARD.html">
                 <h1>POSTCARD</h1>
@@ -36,7 +95,7 @@
         <div class="itempic">
             <a href="POSTCARD.html"><img src="./img/shop/POSTCARD1.png" alt=""></a>
         </div>
-    </div>
+    </div> -->
     <!-- SHOP ITEM -->
     <div class="nav-icon">
         <ul>
@@ -93,16 +152,20 @@
     </div>
     </div>
 
-    <!-- CONTACT -->
-    <ul class="contactbtn">
-        <li><a href="CONTACT.html">
-                <h2>CONTACT</h2>
-            </a></li>
-    </ul>
+    <!-- contact decoration -->
+    <div class="deco">
+        <a href="INDEX.html"><img src="./img/logo.gif" alt="" id="logo8"></a>
+    </div>
+
+    <div class="contactm">
+        <ul>
+            <li><img src="./img/d.gif" alt=""></li>
+            <li><a href="CONTACT.html">CONTACT</a></li>
+        </ul>
+    </div>
 
     <!-- FOOTER -->
     <footer>
-        <a href="INDEX.html"><img src="./img/logo.gif" alt=""></a>
         <div class="footer">
             <div class="footer_type">
                 <ul>
